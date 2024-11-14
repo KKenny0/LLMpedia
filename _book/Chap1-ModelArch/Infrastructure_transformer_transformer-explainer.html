@@ -1,0 +1,1004 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Transformer 可视化解释 · LLMpedia</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Kenny Wu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Infrastructure_luxiangdong_Transformer-OverallArch.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    模型结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    基础模型结构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" >
+            
+                <span>
+            
+                    
+                    Transformer 架构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1.1.1" data-path="Infrastructure_transformer_transformer-explainer.html">
+            
+                <a href="Infrastructure_transformer_transformer-explainer.html">
+            
+                    
+                    Transformer 可视化解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.1.2" data-path="Infrastructure_luxiangdong_Transformer-OverallArch.html">
+            
+                <a href="Infrastructure_luxiangdong_Transformer-OverallArch.html">
+            
+                    
+                    土猛的员外-Transformer 架构的整体指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="Infrastructure_HF_Encoder-models.html">
+            
+                <a href="Infrastructure_HF_Encoder-models.html">
+            
+                    
+                    Encoder 模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="Infrastructure_HF_Decoder-models.html">
+            
+                <a href="Infrastructure_HF_Decoder-models.html">
+            
+                    
+                    Decoder 模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="Infrastructure_HF_Encoder-Decoder-models.html">
+            
+                <a href="Infrastructure_HF_Encoder-Decoder-models.html">
+            
+                    
+                    Encoder-Decoder 模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    进阶结构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" >
+            
+                <span>
+            
+                    
+                    注意力机制
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="Advanced_Blog_AttentionAttention.html">
+            
+                <a href="Advanced_Blog_AttentionAttention.html">
+            
+                    
+                    Lilian-Attention?Attention!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" >
+            
+                <span>
+            
+                    
+                    框架变体
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chap2-TrainingTech/">
+            
+                <a href="../Chap2-TrainingTech/">
+            
+                    
+                    训练技术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    预训练
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    微调
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" >
+            
+                <span>
+            
+                    
+                    监督微调
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" >
+            
+                <span>
+            
+                    
+                    指令微调
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    强化学习
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <span>
+            
+                    
+                    蒸馏和压缩
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" >
+            
+                <span>
+            
+                    
+                    知识蒸馏
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" >
+            
+                <span>
+            
+                    
+                    剪枝和量化
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chap3-PromptEngr/">
+            
+                <a href="../Chap3-PromptEngr/">
+            
+                    
+                    Prompt 工程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    Prompt 技术
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../Chap3-PromptEngr/prompt-tech_baoyu_how-to-write-good-prompt.html">
+            
+                <a href="../Chap3-PromptEngr/prompt-tech_baoyu_how-to-write-good-prompt.html">
+            
+                    
+                    宝玉老师-如何写好提示词？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    应用场景
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../Chap3-PromptEngr/prompt-app_openai-prompt-generation.html">
+            
+                <a href="../Chap3-PromptEngr/prompt-app_openai-prompt-generation.html">
+            
+                    
+                    OpenAI-生成提示词的提示词
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chap4-InferAndOpt/">
+            
+                <a href="../Chap4-InferAndOpt/">
+            
+                    
+                    推理与优化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    推理框架
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    推理加速
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    多模态处理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" >
+            
+                <span>
+            
+                    
+                    图像-文本模型
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" >
+            
+                <span>
+            
+                    
+                    跨模态注意力机制
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    内容与计算优化
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chap5-App/">
+            
+                <a href="../Chap5-App/">
+            
+                    
+                    应用方向
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    文本生成与摘要
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" >
+            
+                <span>
+            
+                    
+                    自然语言生成
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" >
+            
+                <span>
+            
+                    
+                    文本摘要
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    问答与对话技术
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" >
+            
+                <span>
+            
+                    
+                    Chatbot 技术
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" >
+            
+                <span>
+            
+                    
+                    问答系统与检索增强生成
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    代码生成与分析
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" >
+            
+                <span>
+            
+                    
+                    编程助手
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" >
+            
+                <span>
+            
+                    
+                    自动代码补全
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Transformer 可视化解释</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;-transformer&#xFF1F;"><b>1.1. </b>&#x4EC0;&#x4E48;&#x662F; Transformer&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#transformer-&#x7ED3;&#x6784;"><b>1.2. </b>Transformer &#x7ED3;&#x6784;</a></li><li><span class="title-icon "></span><a href="#embedding"><b>1.3. </b>Embedding</a></li><ul><li><span class="title-icon "></span><a href="#step1-tokenization"><b>1.3.1. </b>Step1: Tokenization</a></li><li><span class="title-icon "></span><a href="#step2-token-embedding"><b>1.3.2. </b>Step2: Token Embedding</a></li><li><span class="title-icon "></span><a href="#step3-&#x4F4D;&#x7F6E;&#x7F16;&#x7801;"><b>1.3.3. </b>Step3: &#x4F4D;&#x7F6E;&#x7F16;&#x7801;</a></li><li><span class="title-icon "></span><a href="#step4-&#x6700;&#x7EC8;-embedding"><b>1.3.4. </b>Step4: &#x6700;&#x7EC8; Embedding</a></li></ul><li><span class="title-icon "></span><a href="#transformer-&#x5757;"><b>1.4. </b>Transformer &#x5757;</a></li><ul><li><span class="title-icon "></span><a href="#&#x591A;&#x5934;&#x6CE8;&#x610F;&#x529B;"><b>1.4.1. </b>&#x591A;&#x5934;&#x6CE8;&#x610F;&#x529B;</a></li></ul><li><span class="title-icon "></span><a href="#mlp"><b>1.5. </b>MLP</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p>Transformer Expander &#x662F;&#x4E00;&#x79CD;&#x4EA4;&#x4E92;&#x5F0F;&#x53EF;&#x89C6;&#x5316;&#x5DE5;&#x5177;&#xFF0C;&#x65E8;&#x5728;&#x5E2E;&#x52A9;&#x4EFB;&#x4F55;&#x4EBA;&#x4E86;&#x89E3; GPT &#x7B49;&#x57FA;&#x4E8E; Transformer &#x7684;&#x6A21;&#x578B;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x3002;
+&#x5B83;&#x76F4;&#x63A5;&#x5728;&#x60A8;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8FD0;&#x884C;&#x5B9E;&#x65F6; GPT-2 &#x6A21;&#x578B;&#xFF0C;&#x5141;&#x8BB8;&#x60A8;&#x8BD5;&#x9A8C;&#x81EA;&#x5DF1;&#x7684;&#x6587;&#x672C;&#x5E76;&#x5B9E;&#x65F6;&#x89C2;&#x5BDF; Transformer &#x7684;&#x5185;&#x90E8;&#x7EC4;&#x4EF6;&#x548C;&#x64CD;&#x4F5C;&#x5982;&#x4F55;&#x534F;&#x540C;&#x5DE5;&#x4F5C;&#x4EE5;&#x9884;&#x6D4B;&#x4E0B;&#x4E00;&#x4E2A;&#x4EE4;&#x724C;&#x3002;</p>
+<blockquote>
+<ul>
+<li><a href="https://github.com/poloclub/transformer-explainer" target="_blank">transformer-explainer</a></li>
+<li><a href="https://poloclub.github.io/transformer-explainer/" target="_blank">transformer-explainer-demo</a></li>
+</ul>
+</blockquote>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;-transformer&#xFF1F;"><a name="&#x4EC0;&#x4E48;&#x662F;-transformer&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;-transformer&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x4EC0;&#x4E48;&#x662F; Transformer&#xFF1F;</h2>
+<p>&#x4ECE;&#x6839;&#x672C;&#x4E0A;&#x6765;&#x8BF4;&#xFF0C;&#x6587;&#x672C;&#x751F;&#x6210; Transformer &#x6A21;&#x578B;&#x7684;&#x8FD0;&#x884C;&#x539F;&#x7406;&#x662F;&#x4E0B;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x9884;&#x6D4B;&#xFF1A;&#x7ED9;&#x5B9A;&#x7528;&#x6237;&#x7684;&#x6587;&#x672C;&#x63D0;&#x793A;&#xFF0C;&#x8BE5;&#x8F93;&#x5165;&#x4E4B;&#x540E;&#x6700;&#x6709;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x662F;&#x4EC0;&#x4E48;&#xFF1F; 
+Transformer &#x7684;&#x6838;&#x5FC3;&#x521B;&#x65B0;&#x548C;&#x5F3A;&#x5927;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#x5B83;&#x4EEC;&#x4F7F;&#x7528;&#x81EA;&#x6CE8;&#x610F;&#x529B;&#x673A;&#x5236;&#xFF0C;&#x8FD9;&#x4F7F;&#x5F97;&#x5B83;&#x4EEC;&#x80FD;&#x591F;&#x6BD4;&#x4EE5;&#x524D;&#x7684;&#x67B6;&#x6784;&#x66F4;&#x6709;&#x6548;&#x5730;&#x5904;&#x7406;&#x6574;&#x4E2A;&#x5E8F;&#x5217;&#x5E76;&#x6355;&#x83B7;&#x8FDC;&#x7A0B;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;</p>
+<h2 id="transformer-&#x7ED3;&#x6784;"><a name="transformer-&#x7ED3;&#x6784;" class="anchor-navigation-ex-anchor" href="#transformer-&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Transformer &#x7ED3;&#x6784;</h2>
+<p>&#x6BCF;&#x4E2A;&#x6587;&#x672C;&#x751F;&#x6210; Transformer &#x90FD;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x4E09;&#x4E2A;&#x5173;&#x952E;&#x7EC4;&#x4EF6;&#xFF1A;</p>
+<ol>
+<li>Embedding</li>
+<li>Transformer &#x5757;:<ul>
+<li>&#x6CE8;&#x610F;&#x529B;&#x673A;&#x5236;: Transformer&#x6A21;&#x5757;&#x7684;&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;&#x3002;&#x5B83;&#x5141;&#x8BB8;&#x6807;&#x8BB0;&#x4E0E;&#x5176;&#x4ED6;&#x6807;&#x8BB0;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#xFF0C;&#x6355;&#x83B7;&#x4E0A;&#x4E0B;&#x6587;&#x4FE1;&#x606F;&#x548C;&#x5355;&#x8BCD;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x3002;</li>
+<li>&#x591A;&#x5C42;&#x611F;&#x77E5;&#x5668;&#x5C42;: &#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x8FD0;&#x884C;&#x5728;&#x6BCF;&#x4E2A;&#x4EE4;&#x724C;&#x4E0A;&#x7684;&#x524D;&#x9988;&#x7F51;&#x7EDC;&#x3002;&#x6CE8;&#x610F;&#x529B;&#x5C42;&#x7684;&#x76EE;&#x6807;&#x662F;&#x5728; token &#x4E4B;&#x95F4;&#x8DEF;&#x7531;&#x4FE1;&#x606F;&#xFF0C;&#x800C; MLP &#x7684;&#x76EE;&#x6807;&#x662F;&#x7EC6;&#x5316;&#x6BCF;&#x4E2A; token &#x7684;&#x8868;&#x793A;&#x3002;</li>
+</ul>
+</li>
+<li>&#x8F93;&#x51FA;&#x6982;&#x7387;: &#x6700;&#x540E;&#x7684;&#x7EBF;&#x6027;&#x5C42;&#x548C; softmax &#x5C42;&#x5C06;&#x5904;&#x7406;&#x540E;&#x7684;&#x5D4C;&#x5165;&#x8F6C;&#x6362;&#x4E3A;&#x6982;&#x7387;&#xFF0C;&#x4F7F;&#x6A21;&#x578B;&#x80FD;&#x591F;&#x9884;&#x6D4B;&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x6807;&#x8BB0;&#x3002;</li>
+</ol>
+<h2 id="embedding"><a name="embedding" class="anchor-navigation-ex-anchor" href="#embedding"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Embedding</h2>
+<p>&#x5D4C;&#x5165;&#x7684;&#x7528;&#x6B66;&#x4E4B;&#x5730;&#xFF1A;&#x5B83;&#x5C06;&#x6587;&#x672C;&#x8F6C;&#x6362;&#x4E3A;&#x6A21;&#x578B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x5B57;&#x8868;&#x793A;&#x3002;
+&#x8981;&#x5C06;&#x63D0;&#x793A;&#x8F6C;&#x6362;&#x4E3A;&#x5D4C;&#x5165;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;: 1) &#x5BF9;&#x8F93;&#x5165;&#x8FDB;&#x884C;&#x6807;&#x8BB0;; 2) &#x83B7;&#x53D6;&#x6807;&#x8BB0;&#x5D4C;&#x5165;; 3) &#x6DFB;&#x52A0;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x6700;&#x540E; 4) &#x5C06;&#x6807;&#x8BB0;&#x548C;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x76F8;&#x52A0;&#x4EE5;&#x83B7;&#x5F97;&#x6700;&#x7EC8;&#x5D4C;&#x5165;&#x3002;</p>
+<h3 id="step1-tokenization"><a name="step1-tokenization" class="anchor-navigation-ex-anchor" href="#step1-tokenization"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. Step1: Tokenization</h3>
+<p>&#x6807;&#x8BB0;&#x5316;&#x662F;&#x5C06;&#x8F93;&#x5165;&#x6587;&#x672C;&#x5206;&#x89E3;&#x4E3A;&#x66F4;&#x5C0F;&#x3001;&#x66F4;&#x6613;&#x4E8E;&#x7BA1;&#x7406;&#x7684;&#x7247;&#x6BB5;&#xFF08;&#x79F0;&#x4E3A;&#x6807;&#x8BB0;&#xFF09;&#x7684;&#x8FC7;&#x7A0B;&#x3002;
+&#x8FD9;&#x4E9B;&#x6807;&#x8BB0;&#x53EF;&#x4EE5;&#x662F;&#x5355;&#x8BCD;&#x6216;&#x5B50;&#x5355;&#x8BCD;&#x3002;
+&#x201C;&#x6570;&#x636E;&#x201D;&#x548C;&#x201C;&#x53EF;&#x89C6;&#x5316;&#x201D;&#x4E00;&#x8BCD;&#x5BF9;&#x5E94;&#x4E8E;&#x72EC;&#x7279;&#x7684;&#x6807;&#x8BB0;&#xFF0C;&#x800C;&#x201C;&#x6388;&#x6743;&#x201D;&#x4E00;&#x8BCD;&#x5219;&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x6807;&#x8BB0;&#x3002;
+&#x4EE4;&#x724C;&#x7684;&#x5B8C;&#x6574;&#x8BCD;&#x6C47;&#x8868;&#x5728;&#x8BAD;&#x7EC3;&#x6A21;&#x578B;&#x4E4B;&#x524D;&#x786E;&#x5B9A;&#xFF1A;GPT-2 &#x7684;&#x8BCD;&#x6C47;&#x8868;&#x6709; 50,257 &#x4E2A;&#x552F;&#x4E00;&#x4EE4;&#x724C;&#x3002;
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5C06;&#x8F93;&#x5165;&#x6587;&#x672C;&#x5206;&#x5272;&#x6210;&#x5177;&#x6709;&#x4E0D;&#x540C; ID &#x7684;&#x6807;&#x8BB0;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4ECE;&#x5D4C;&#x5165;&#x4E2D;&#x83B7;&#x53D6;&#x5B83;&#x4EEC;&#x7684;&#x5411;&#x91CF;&#x8868;&#x793A;&#x3002;</p>
+<h3 id="step2-token-embedding"><a name="step2-token-embedding" class="anchor-navigation-ex-anchor" href="#step2-token-embedding"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. Step2: Token Embedding</h3>
+<p>GPT-2 Small &#x5C06;&#x8BCD;&#x6C47;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A; token &#x8868;&#x793A;&#x4E3A; 768 &#x7EF4;&#x5411;&#x91CF;&#xFF1B;&#x5411;&#x91CF;&#x7684;&#x7EF4;&#x5EA6;&#x53D6;&#x51B3;&#x4E8E;&#x6A21;&#x578B;&#x3002;
+&#x8FD9;&#x4E9B;&#x5D4C;&#x5165;&#x5411;&#x91CF;&#x5B58;&#x50A8;&#x5728;&#x5F62;&#x72B6;&#x4E3A; (50,257, 768) &#x7684;&#x77E9;&#x9635;&#x4E2D;&#xFF0C;&#x5305;&#x542B;&#x5927;&#x7EA6; 3900 &#x4E07;&#x4E2A;&#x53C2;&#x6570;&#xFF01;
+&#x8FD9;&#x4E2A;&#x5E7F;&#x6CDB;&#x7684;&#x77E9;&#x9635;&#x5141;&#x8BB8;&#x6A21;&#x578B;&#x4E3A;&#x6BCF;&#x4E2A;&#x6807;&#x8BB0;&#x5206;&#x914D;&#x8BED;&#x4E49;&#x3002;</p>
+<h3 id="step3-&#x4F4D;&#x7F6E;&#x7F16;&#x7801;"><a name="step3-&#x4F4D;&#x7F6E;&#x7F16;&#x7801;" class="anchor-navigation-ex-anchor" href="#step3-&#x4F4D;&#x7F6E;&#x7F16;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. Step3: &#x4F4D;&#x7F6E;&#x7F16;&#x7801;</h3>
+<p>&#x5D4C;&#x5165;&#x5C42;&#x8FD8;&#x5BF9;&#x8F93;&#x5165;&#x63D0;&#x793A;&#x4E2D;&#x6BCF;&#x4E2A;&#x6807;&#x8BB0;&#x7684;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x7F16;&#x7801;&#x3002;&#x4E0D;&#x540C;&#x7684;&#x6A21;&#x578B;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x65B9;&#x6CD5;&#x3002; 
+GPT-2 &#x4ECE;&#x5934;&#x5F00;&#x59CB;&#x8BAD;&#x7EC3;&#x81EA;&#x5DF1;&#x7684;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x77E9;&#x9635;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x76F4;&#x63A5;&#x96C6;&#x6210;&#x5230;&#x8BAD;&#x7EC3;&#x8FC7;&#x7A0B;&#x4E2D;&#x3002;</p>
+<h3 id="step4-&#x6700;&#x7EC8;-embedding"><a name="step4-&#x6700;&#x7EC8;-embedding" class="anchor-navigation-ex-anchor" href="#step4-&#x6700;&#x7EC8;-embedding"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.4. Step4: &#x6700;&#x7EC8; Embedding</h3>
+<p>&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4EE4;&#x724C;&#x548C;&#x4F4D;&#x7F6E;&#x7F16;&#x7801;&#x76F8;&#x52A0;&#x4EE5;&#x83B7;&#x5F97;&#x6700;&#x7EC8;&#x7684;&#x5D4C;&#x5165;&#x8868;&#x793A;&#x3002;&#x8FD9;&#x79CD;&#x7EC4;&#x5408;&#x8868;&#x793A;&#x6355;&#x83B7;&#x4E86;&#x6807;&#x8BB0;&#x7684;&#x8BED;&#x4E49;&#x53CA;&#x5176;&#x5728;&#x8F93;&#x5165;&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<h2 id="transformer-&#x5757;"><a name="transformer-&#x5757;" class="anchor-navigation-ex-anchor" href="#transformer-&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Transformer &#x5757;</h2>
+<p>Transformer &#x5904;&#x7406;&#x7684;&#x6838;&#x5FC3;&#x5728;&#x4E8E; Transformer &#x5757;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x591A;&#x5934;&#x81EA;&#x6CE8;&#x610F;&#x529B;&#x548C;&#x591A;&#x5C42;&#x611F;&#x77E5;&#x5668;&#x5C42;&#x3002;
+&#x5927;&#x591A;&#x6570;&#x6A21;&#x578B;&#x7531;&#x591A;&#x4E2A;&#x8FD9;&#x6837;&#x7684;&#x5757;&#x7EC4;&#x6210;&#xFF0C;&#x8FD9;&#x4E9B;&#x5757;&#x6309;&#x987A;&#x5E8F;&#x4F9D;&#x6B21;&#x5806;&#x53E0;&#x3002;
+Token &#x8868;&#x793A;&#x4ECE;&#x7B2C;&#x4E00;&#x4E2A;&#x533A;&#x5757;&#x5230;&#x7B2C; 12 &#x4E2A;&#x533A;&#x5757;&#x9010;&#x5C42;&#x6F14;&#x53D8;&#xFF0C;&#x4F7F;&#x6A21;&#x578B;&#x80FD;&#x591F;&#x5EFA;&#x7ACB;&#x5BF9;&#x6BCF;&#x4E2A;&#x4EE3;&#x5E01;&#x7684;&#x590D;&#x6742;&#x7406;&#x89E3;&#x3002;
+&#x8FD9;&#x79CD;&#x5206;&#x5C42;&#x65B9;&#x6CD5;&#x5BFC;&#x81F4;&#x8F93;&#x5165;&#x7684;&#x9AD8;&#x9636;&#x8868;&#x793A;&#x3002;</p>
+<h3 id="&#x591A;&#x5934;&#x6CE8;&#x610F;&#x529B;"><a name="&#x591A;&#x5934;&#x6CE8;&#x610F;&#x529B;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x5934;&#x6CE8;&#x610F;&#x529B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. &#x591A;&#x5934;&#x6CE8;&#x610F;&#x529B;</h3>
+<ol>
+<li>Query, Key and Value &#x77E9;&#x9635;</li>
+<li>Masked Self-Attention<ul>
+<li>Attention Score</li>
+<li>Masking</li>
+<li>Softmax</li>
+</ul>
+</li>
+<li>Output: &#x8BE5;&#x6A21;&#x578B;&#x4F7F;&#x7528;&#x5C4F;&#x853D;&#x7684;&#x81EA;&#x6CE8;&#x610F;&#x529B;&#x5206;&#x6570;&#x5E76;&#x5C06;&#x5176;&#x4E0E;&#x503C;&#x77E9;&#x9635;&#x76F8;&#x4E58;&#x4EE5;&#x83B7;&#x5F97;&#x81EA;&#x6CE8;&#x610F;&#x529B;&#x673A;&#x5236;&#x7684;&#x6700;&#x7EC8;&#x8F93;&#x51FA;&#x3002;</li>
+</ol>
+<h2 id="mlp"><a name="mlp" class="anchor-navigation-ex-anchor" href="#mlp"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. MLP</h2>
+<p>&#x5728;&#x591A;&#x4E2A;&#x81EA;&#x6CE8;&#x610F;&#x529B;&#x5934;&#x6355;&#x83B7;&#x8F93;&#x5165;&#x6807;&#x8BB0;&#x4E4B;&#x95F4;&#x7684;&#x4E0D;&#x540C;&#x5173;&#x7CFB;&#x540E;&#xFF0C;&#x8FDE;&#x63A5;&#x7684;&#x8F93;&#x51FA;&#x5C06;&#x901A;&#x8FC7;&#x591A;&#x5C42;&#x611F;&#x77E5;&#x5668;&#xFF08;MLP&#xFF09;&#x5C42;&#xFF0C;&#x4EE5;&#x589E;&#x5F3A;&#x6A21;&#x578B;&#x7684;&#x8868;&#x793A;&#x80FD;&#x529B;&#x3002;
+MLP &#x5757;&#x7531;&#x4E24;&#x4E2A;&#x7EBF;&#x6027;&#x53D8;&#x6362;&#x7EC4;&#x6210;&#xFF0C;&#x4E2D;&#x95F4;&#x6709;&#x4E00;&#x4E2A; GELU &#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#x3002;
+&#x7B2C;&#x4E00;&#x4E2A;&#x7EBF;&#x6027;&#x53D8;&#x6362;&#x5C06;&#x8F93;&#x5165;&#x7684;&#x7EF4;&#x5EA6;&#x4ECE; 768 &#x589E;&#x52A0;&#x56DB;&#x500D;&#x5230; 3072&#x3002;
+&#x7B2C;&#x4E8C;&#x4E2A;&#x7EBF;&#x6027;&#x53D8;&#x6362;&#x5C06;&#x7EF4;&#x5EA6;&#x964D;&#x4F4E;&#x56DE;&#x539F;&#x59CB;&#x5927;&#x5C0F; 768&#xFF0C;&#x786E;&#x4FDD;&#x540E;&#x7EED;&#x5C42;&#x63A5;&#x6536;&#x4E00;&#x81F4;&#x7EF4;&#x5EA6;&#x7684;&#x8F93;&#x5165;&#x3002;
+&#x4E0E;&#x81EA;&#x6CE8;&#x610F;&#x529B;&#x673A;&#x5236;&#x4E0D;&#x540C;&#xFF0C;MLP &#x72EC;&#x7ACB;&#x5904;&#x7406; token&#xFF0C;&#x5E76;&#x7B80;&#x5355;&#x5730;&#x5C06;&#x5B83;&#x4EEC;&#x4ECE;&#x4E00;&#x79CD;&#x8868;&#x793A;&#x6620;&#x5C04;&#x5230;&#x53E6;&#x4E00;&#x79CD;&#x8868;&#x793A;&#x3002;</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x7248;&#x6743;&#x4FE1;&#x606F; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;: 
+2024-11-14 10:49:04
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="Infrastructure_luxiangdong_Transformer-OverallArch.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 土猛的员外-Transformer 架构的整体指南">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Transformer 可视化解释","level":"1.2.1.1.1","depth":4,"next":{"title":"土猛的员外-Transformer 架构的整体指南","level":"1.2.1.1.2","depth":4,"path":"Chap1-ModelArch/Infrastructure_luxiangdong_Transformer-OverallArch.md","ref":"Chap1-ModelArch/Infrastructure_luxiangdong_Transformer-OverallArch.md","articles":[]},"previous":{"title":"Transformer 架构","level":"1.2.1.1","depth":3,"ref":"","articles":[{"title":"Transformer 可视化解释","level":"1.2.1.1.1","depth":4,"path":"Chap1-ModelArch/Infrastructure_transformer_transformer-explainer.md","ref":"Chap1-ModelArch/Infrastructure_transformer_transformer-explainer.md","articles":[]},{"title":"土猛的员外-Transformer 架构的整体指南","level":"1.2.1.1.2","depth":4,"path":"Chap1-ModelArch/Infrastructure_luxiangdong_Transformer-OverallArch.md","ref":"Chap1-ModelArch/Infrastructure_luxiangdong_Transformer-OverallArch.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","back-to-top-button","expandable-chapters","chapter-fold","splitter","code","github","tbfed-pagefooter","pageview-count","copy-code-button","anchor-navigation-ex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy 版权信息","modify_label":"该文件修订时间: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/KKenny0/LLMpedia"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"back-to-top-button":{},"pageview-count":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","keywords":"AI,LLM,笔记","author":"Kenny Wu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LLMpedia","introduction":{"path":"README.md","title":"LLMpedia"},"gitbook":"*","description":"搜集和分享个人喜欢的大语言模型（LLM）相关资源的在线百科全书。"},"file":{"path":"Chap1-ModelArch/Infrastructure_transformer_transformer-explainer.md","mtime":"2024-11-14T02:49:04.532Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-11-14T09:09:07.866Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
