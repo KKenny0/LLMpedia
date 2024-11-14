@@ -1,0 +1,36 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="16">
+            <item index="0" class="java.lang.String" itemvalue="pathlib" />
+            <item index="1" class="java.lang.String" itemvalue="selenium" />
+            <item index="2" class="java.lang.String" itemvalue="configparser" />
+            <item index="3" class="java.lang.String" itemvalue="PyExecJS" />
+            <item index="4" class="java.lang.String" itemvalue="ffmpeg" />
+            <item index="5" class="java.lang.String" itemvalue="fastapi" />
+            <item index="6" class="java.lang.String" itemvalue="pydantic" />
+            <item index="7" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="8" class="java.lang.String" itemvalue="peft" />
+            <item index="9" class="java.lang.String" itemvalue="pydub" />
+            <item index="10" class="java.lang.String" itemvalue="uvicorn" />
+            <item index="11" class="java.lang.String" itemvalue="bitsandbytes" />
+            <item index="12" class="java.lang.String" itemvalue="dspy-ai" />
+            <item index="13" class="java.lang.String" itemvalue="neo4j" />
+            <item index="14" class="java.lang.String" itemvalue="future" />
+            <item index="15" class="java.lang.String" itemvalue="pydantic_core" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="list.pop" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

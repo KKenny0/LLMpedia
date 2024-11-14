@@ -1,0 +1,35 @@
+{
+  "title": "LLMpedia",
+  "author": "Kenny Wu",
+  "description": "搜集和分享个人喜欢的大语言模型（LLM）相关资源的在线百科全书。",
+  "keywords": "AI,LLM,笔记",
+  "introduction": {
+    "path": "README.md",
+    "title": "LLMpedia"
+  },
+  "plugins":[
+    "-lunr",
+    "-search",
+    "search-pro",
+    "back-to-top-button",
+    "expandable-chapters",
+    "chapter-fold",
+    "splitter",
+    "code",
+    "github",
+    "tbfed-pagefooter",
+    "pageview-count",
+    "copy-code-button",
+    "anchor-navigation-ex"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/KKenny0/LLMpedia"
+    },
+    "tbfed-pagefooter": {
+      "copyright": "Copyright &copy 版权信息",
+      "modify_label": "该文件修订时间: ",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    }
+  }
+}
