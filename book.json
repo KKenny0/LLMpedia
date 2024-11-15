@@ -20,7 +20,8 @@
     "tbfed-pagefooter",
     "pageview-count",
     "copy-code-button",
-    "anchor-navigation-ex"
+    "anchor-navigation-ex",
+    "katex-pp"
   ],
   "pluginsConfig": {
     "github": {
