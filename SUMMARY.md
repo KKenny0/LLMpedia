@@ -3,23 +3,24 @@
 * [前言](README.md)
 
 * [模型结构](Chap1-ModelArch/README.md)
-  * 基础模型结构
-    * Transformer 架构
-      * [Transformer 可视化解释](Chap1-ModelArch/Infrastructure_transformer_transformer-explainer.md)
-      * [土猛的员外-Transformer 架构的整体指南](Chap1-ModelArch/Infrastructure_luxiangdong_Transformer-OverallArch.md)
-    * [Encoder 模型](Chap1-ModelArch/Infrastructure_HF_Encoder-models.md)
-    * [Decoder 模型](Chap1-ModelArch/Infrastructure_HF_Decoder-models.md)
-    * [Encoder-Decoder 模型](Chap1-ModelArch/Infrastructure_HF_Encoder-Decoder-models.md)
-  * 进阶结构
-    * 注意力机制
-      * [Lilian-Attention?Attention!](Chap1-ModelArch/Advanced_Blog_AttentionAttention.md)
-    * 框架变体
+  * Transformer 架构与模型
+    * [Transformer 可视化解释](Chap1-ModelArch/transformer_arch/Infrastructure_transformer_transformer-explainer.md)
+    * [土猛的员外-Transformer 架构的整体指南](Chap1-ModelArch/transformer_arch/Infrastructure_luxiangdong_Transformer-OverallArch.md)
+    * [Encoder 模型](Chap1-ModelArch/transformer_arch/Infrastructure_HF_Encoder-models.md)
+    * [Decoder 模型](Chap1-ModelArch/transformer_arch/Infrastructure_HF_Decoder-models.md)
+    * [Encoder-Decoder 模型](Chap1-ModelArch/transformer_arch/Infrastructure_HF_Encoder-Decoder-models.md)
+  * 注意力机制
+    * [Lilian-Attention?Attention!](Chap1-ModelArch/attention/Advanced_Blog_AttentionAttention.md)
+    * [缓存优化与效果-KV](Chap1-ModelArch/attention/mha-related.md)
 
 * [训练技术](Chap2-TrainingTech/README.md)
-  * 预训练
-  * 微调
-    * 监督微调
-    * 指令微调
+  * [分布式训练](Chap2-TrainingTech/distributed-training/overview.md)
+    * [数据并行](Chap2-TrainingTech/distributed-training/data-parallel.md)
+    * [流水线并行](Chap2-TrainingTech/distributed-training/pipeline-parallel.md)
+    * [张量并行](Chap2-TrainingTech/distributed-training/pipeline-parallel.md)
+    * [MoE 并行](Chap2-TrainingTech/distributed-training/moe-parallel.md)
+  * [有监督微调](Chap2-TrainingTech/fine-tuning/overview.md)
+    * [关于微调的讨论](Chap2-TrainingTech/fine-tuning/finetuning-discussion.md)
   * 强化学习
   * 蒸馏和压缩
     * 知识蒸馏
