@@ -33,7 +33,7 @@
     * [OpenAI-生成提示词的提示词](Chap3-PromptEngr/prompt-app_openai-prompt-generation.md)
 
 * [推理与优化](Chap4-InferAndOpt/README.md)
-  * 推理框架
+  * [LLM 推理过程](Chap4-InferAndOpt/llm-inference-workload.md)
   * 推理加速
   * 多模态处理
     * 图像-文本模型
