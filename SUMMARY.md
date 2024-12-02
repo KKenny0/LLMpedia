@@ -34,6 +34,7 @@
 
 * [推理与优化](Chap4-InferAndOpt/README.md)
   * [LLM 推理过程](Chap4-InferAndOpt/llm-inference-workload.md)
+  * [OpenAI O1 相关进展](Chap4-InferAndOpt/openai-o1-rel.md)
   * 推理加速
   * 多模态处理
     * 图像-文本模型
