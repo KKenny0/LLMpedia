@@ -1,4 +1,6 @@
-## Adapter based PEFT
+# Adapter based PEFT
+
+## Adapter Tuning
 
 ### 背景
 
@@ -13,8 +15,20 @@ Adapter 是在预训练网络层之间添加的新模块，在训练过程中仅
 在训练时，固定住原来预训练模型的参数不变，只对新增的 Adapter 结构和 Layer Norm 层进行微调，从而保证了训练的高效性。
 
 ### 具体细节
-每个 Adapter 模块主要
+每个 Adapter 模块主要由**两个前馈（Feedforward）子层组成**，第一个前馈子层（Feedforward down-project）将 Transformer 块的输出作为输入，
+将原始输入维度 `d`（高维特征）投影到 `m`（低维特征），通过控制 `m` 的大小来限制 Adapter 模块的参数量，通常情况下，`m<<d`。
 
+然后，中间通过一个非线性层。在输出阶段，通过第二个前馈子层（Feedforward up-project）还原输入维度，将 `m`（低维特征）重新映射回 `d`（原来的高维特征），作为 Adapter 模块的输出。
+同时，通过一个skip connection来将 Adapter 的输入重新加到最终的输出中去，这样可以保证，即便 Adapter 一开始的参数初始化接近0，
+Adapter 也由于skip connection的设置而接近于一个恒等映射，从而确保训练的有效性。
+$$
+h \leftarrow h+f\left(h W_{\text {down }}\right) W_{u p}
+$$
+
+### How to decide the value of m
+
+- Adapter 模块中 `m` 的大小决定了待优化的参数量，因此需要对参数和性能进行权衡。
+- 原论文的实验研究发现，不同的 Adapter 大小 `m` 的性能十分稳定，因此对于给定的模型，任何下游任务都可以使用固定的大小 `m`。= 
 
 ---
 

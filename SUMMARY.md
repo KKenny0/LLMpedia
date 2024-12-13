@@ -13,15 +13,22 @@
     * [Lilian-Attention?Attention!](Chap1-ModelArch/attention/Advanced_Blog_AttentionAttention.md)
     * [缓存优化与效果-KV](Chap1-ModelArch/attention/mha-related.md)
 
-* [训练技术](Chap2-TrainingTech/README.md)
-  * [分布式训练](Chap2-TrainingTech/distributed-training/overview.md)
-    * [数据并行](Chap2-TrainingTech/distributed-training/data-parallel.md)
-    * [流水线并行](Chap2-TrainingTech/distributed-training/pipeline-parallel.md)
-    * [张量并行](Chap2-TrainingTech/distributed-training/pipeline-parallel.md)
-    * [MoE 并行](Chap2-TrainingTech/distributed-training/moe-parallel.md)
-  * [有监督微调](Chap2-TrainingTech/fine-tuning/overview.md)
-    * [关于微调的讨论](Chap2-TrainingTech/fine-tuning/finetuning-discussion.md)
-  * 强化学习
+* [训练与评估](Chap2-Training_Evaluation/README.md)
+  * [分布式训练](Chap2-Training_Evaluation/distributed-training/overview.md)
+    * [数据并行](Chap2-Training_Evaluation/distributed-training/data-parallel.md)
+    * [流水线并行](Chap2-Training_Evaluation/distributed-training/pipeline-parallel.md)
+    * [张量并行](Chap2-Training_Evaluation/distributed-training/pipeline-parallel.md)
+    * [MoE 并行](Chap2-Training_Evaluation/distributed-training/moe-parallel.md)
+  * [微调](Chap2-Training_Evaluation/fine-tuning/overview.md)
+    * [关于微调的讨论](Chap2-Training_Evaluation/fine-tuning/finetuning-discussion.md)
+    * [预训练](Chap2-Training_Evaluation/fine-tuning/pretrain.md)
+    * [Prompt-Tuning](Chap2-Training_Evaluation/fine-tuning/prompt-tuning.md)
+    * [Adapter-Tuning](Chap2-Training_Evaluation/fine-tuning/adapter-tuning.md)
+    * [LoRA](Chap2-Training_Evaluation/fine-tuning/lora.md)
+    * [总结](Chap2-Training_Evaluation/fine-tuning/summary.md)
+  * [大模型评估](Chap2-Training_Evaluation/evaluation/README.md)
+    * [评测](Chap2-Training_Evaluation/evaluation/evaluating.md)
+    * [幻觉](Chap2-Training_Evaluation/evaluation/hallucination.md)
   * 蒸馏和压缩
     * 知识蒸馏
     * 剪枝和量化
@@ -31,9 +38,13 @@
     * [宝玉老师-如何写好提示词？](Chap3-PromptEngr/prompt-tech_baoyu_how-to-write-good-prompt.md)
   * 应用场景
     * [OpenAI-生成提示词的提示词](Chap3-PromptEngr/prompt-app_openai-prompt-generation.md)
+    * [GPT 翻译 Prompt](Chap3-PromptEngr/prompt-app_baoyu_translator-gpt-prompt.md)
 
 * [推理与优化](Chap4-InferAndOpt/README.md)
-  * [LLM 推理过程](Chap4-InferAndOpt/llm-inference-workload.md)
+  * [LLM 推理过程](Chap4-InferAndOpt/llm-inference-overview.md)
+  * [LLM 推理框架](Chap4-InferAndOpt/infer-framework.md)
+  * [vLLM 介绍](Chap4-InferAndOpt/vllm-framework.md)
+  * [LLM 推理参数](Chap4-InferAndOpt/llm-inference-param.md)
   * [OpenAI O1 相关进展](Chap4-InferAndOpt/openai-o1-rel.md)
   * 推理加速
   * 多模态处理
