@@ -1,0 +1,1324 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>分布式训练框架 · LLMpedia</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Kenny Wu">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex-pp/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="data-parallel.html" />
+    
+    
+    <link rel="prev" href="overview.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Chap1-ModelArch/">
+            
+                <a href="../../Chap1-ModelArch/">
+            
+                    
+                    模型结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    Transformer 架构与模型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../Chap1-ModelArch/transformer_arch/Infrastructure_transformer_transformer-explainer.html">
+            
+                <a href="../../Chap1-ModelArch/transformer_arch/Infrastructure_transformer_transformer-explainer.html">
+            
+                    
+                    Transformer 可视化解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../Chap1-ModelArch/transformer_arch/Infrastructure_luxiangdong_Transformer-OverallArch.html">
+            
+                <a href="../../Chap1-ModelArch/transformer_arch/Infrastructure_luxiangdong_Transformer-OverallArch.html">
+            
+                    
+                    土猛的员外-Transformer 架构的整体指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../Chap1-ModelArch/transformer_arch/Infrastructure_HF_Encoder-models.html">
+            
+                <a href="../../Chap1-ModelArch/transformer_arch/Infrastructure_HF_Encoder-models.html">
+            
+                    
+                    Encoder 模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../Chap1-ModelArch/transformer_arch/Infrastructure_HF_Decoder-models.html">
+            
+                <a href="../../Chap1-ModelArch/transformer_arch/Infrastructure_HF_Decoder-models.html">
+            
+                    
+                    Decoder 模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../../Chap1-ModelArch/transformer_arch/Infrastructure_HF_Encoder-Decoder-models.html">
+            
+                <a href="../../Chap1-ModelArch/transformer_arch/Infrastructure_HF_Encoder-Decoder-models.html">
+            
+                    
+                    Encoder-Decoder 模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    注意力机制
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../Chap1-ModelArch/attention/Advanced_Blog_AttentionAttention.html">
+            
+                <a href="../../Chap1-ModelArch/attention/Advanced_Blog_AttentionAttention.html">
+            
+                    
+                    Lilian-Attention?Attention!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../Chap1-ModelArch/attention/mha-related.html">
+            
+                <a href="../../Chap1-ModelArch/attention/mha-related.html">
+            
+                    
+                    缓存优化与效果-KV
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    训练与评估
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    分布式训练
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1.1" data-path="train-framework.html">
+            
+                <a href="train-framework.html">
+            
+                    
+                    分布式训练框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="data-parallel.html">
+            
+                <a href="data-parallel.html">
+            
+                    
+                    数据并行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="pipeline-parallel.html">
+            
+                <a href="pipeline-parallel.html">
+            
+                    
+                    流水线并行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="pipeline-parallel.html">
+            
+                <a href="pipeline-parallel.html">
+            
+                    
+                    张量并行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="moe-parallel.html">
+            
+                <a href="moe-parallel.html">
+            
+                    
+                    MoE 并行
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../fine-tuning/overview.html">
+            
+                <a href="../fine-tuning/overview.html">
+            
+                    
+                    微调
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../fine-tuning/finetuning-discussion.html">
+            
+                <a href="../fine-tuning/finetuning-discussion.html">
+            
+                    
+                    关于微调的讨论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../fine-tuning/pretrain.html">
+            
+                <a href="../fine-tuning/pretrain.html">
+            
+                    
+                    预训练
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../fine-tuning/prompt-tuning.html">
+            
+                <a href="../fine-tuning/prompt-tuning.html">
+            
+                    
+                    Prompt-Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../fine-tuning/adapter-tuning.html">
+            
+                <a href="../fine-tuning/adapter-tuning.html">
+            
+                    
+                    Adapter-Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../fine-tuning/lora.html">
+            
+                <a href="../fine-tuning/lora.html">
+            
+                    
+                    LoRA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../fine-tuning/summary.html">
+            
+                <a href="../fine-tuning/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../evaluation/">
+            
+                <a href="../evaluation/">
+            
+                    
+                    大模型评估
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../evaluation/evaluating.html">
+            
+                <a href="../evaluation/evaluating.html">
+            
+                    
+                    评测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../evaluation/hallucination.html">
+            
+                <a href="../evaluation/hallucination.html">
+            
+                    
+                    幻觉
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <span>
+            
+                    
+                    蒸馏和压缩
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" >
+            
+                <span>
+            
+                    
+                    知识蒸馏
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" >
+            
+                <span>
+            
+                    
+                    剪枝和量化
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Chap3-PromptEngr/">
+            
+                <a href="../../Chap3-PromptEngr/">
+            
+                    
+                    Prompt 工程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    Prompt 技术
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../Chap3-PromptEngr/prompt-tech_baoyu_how-to-write-good-prompt.html">
+            
+                <a href="../../Chap3-PromptEngr/prompt-tech_baoyu_how-to-write-good-prompt.html">
+            
+                    
+                    宝玉老师-如何写好提示词？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    应用场景
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../Chap3-PromptEngr/prompt-app_openai-prompt-generation.html">
+            
+                <a href="../../Chap3-PromptEngr/prompt-app_openai-prompt-generation.html">
+            
+                    
+                    OpenAI-生成提示词的提示词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../Chap3-PromptEngr/prompt-app_baoyu_translator-gpt-prompt.html">
+            
+                <a href="../../Chap3-PromptEngr/prompt-app_baoyu_translator-gpt-prompt.html">
+            
+                    
+                    GPT 翻译 Prompt
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../Chap4-InferAndOpt/">
+            
+                <a href="../../Chap4-InferAndOpt/">
+            
+                    
+                    推理与优化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../Chap4-InferAndOpt/llm-inference-overview.html">
+            
+                <a href="../../Chap4-InferAndOpt/llm-inference-overview.html">
+            
+                    
+                    LLM 推理过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../Chap4-InferAndOpt/infer-framework.html">
+            
+                <a href="../../Chap4-InferAndOpt/infer-framework.html">
+            
+                    
+                    LLM 推理框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../Chap4-InferAndOpt/vllm-framework.html">
+            
+                <a href="../../Chap4-InferAndOpt/vllm-framework.html">
+            
+                    
+                    vLLM 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../Chap4-InferAndOpt/llm-inference-param.html">
+            
+                <a href="../../Chap4-InferAndOpt/llm-inference-param.html">
+            
+                    
+                    LLM 推理参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../Chap4-InferAndOpt/openai-o1-rel.html">
+            
+                <a href="../../Chap4-InferAndOpt/openai-o1-rel.html">
+            
+                    
+                    OpenAI O1 相关进展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" >
+            
+                <span>
+            
+                    
+                    推理加速
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" >
+            
+                <span>
+            
+                    
+                    多模态处理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.7.1" >
+            
+                <span>
+            
+                    
+                    图像-文本模型
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.2" >
+            
+                <span>
+            
+                    
+                    跨模态注意力机制
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    内容与计算优化
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../Chap5-App/">
+            
+                <a href="../../Chap5-App/">
+            
+                    
+                    应用方向
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    文本生成与摘要
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" >
+            
+                <span>
+            
+                    
+                    自然语言生成
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" >
+            
+                <span>
+            
+                    
+                    文本摘要
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    问答与对话技术
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" >
+            
+                <span>
+            
+                    
+                    Chatbot 技术
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" >
+            
+                <span>
+            
+                    
+                    问答系统与检索增强生成
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    代码生成与分析
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" >
+            
+                <span>
+            
+                    
+                    编程助手
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" >
+            
+                <span>
+            
+                    
+                    自动代码补全
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >分布式训练框架</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x603B;&#x7ED3;"><b>1.1. </b>&#x603B;&#x7ED3;</a></li><li><span class="title-icon "></span><a href="#megatron-lm"><b>1.2. </b>Megatron-LM</a></li><li><span class="title-icon "></span><a href="#deepspeed"><b>1.3. </b>DeepSpeed</a></li><li><span class="title-icon "></span><a href="#megatron-deepspeed"><b>1.4. </b>Megatron-DeepSpeed</a></li><ul><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x5E76;&#x884C;"><b>1.4.1. </b>&#x6570;&#x636E;&#x5E76;&#x884C;</a></li><li><span class="title-icon "></span><a href="#zero-&#x6570;&#x636E;&#x5E76;&#x884C;"><b>1.4.2. </b>ZeRO &#x6570;&#x636E;&#x5E76;&#x884C;</a></li><li><span class="title-icon "></span><a href="#&#x5F20;&#x91CF;&#x5E76;&#x884C;"><b>1.4.3. </b>&#x5F20;&#x91CF;&#x5E76;&#x884C;</a></li><li><span class="title-icon "></span><a href="#&#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;"><b>1.4.4. </b>&#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;</a></li><li><span class="title-icon "></span><a href="#dp--pp"><b>1.4.5. </b>DP + PP</a></li><li><span class="title-icon "></span><a href="#dppptp"><b>1.4.6. </b>DP+PP+TP</a></li><li><span class="title-icon "></span><a href="#zero-dppptp"><b>1.4.7. </b>ZeRO DP+PP+TP</a></li><li><span class="title-icon "></span><a href="#bf16-optimizer"><b>1.4.8. </b>BF16 Optimizer</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p>[# DeepSpeed &#x548C; Megatron &#x7684;&#x533A;&#x522B;&#x548C;&#x8054;&#x7CFB;</p>
+<h2 id="&#x603B;&#x7ED3;"><a name="&#x603B;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x603B;&#x7ED3;</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>DeepSpeed</th>
+<th>DeepSpeed &#x4EE3;&#x8868;&#x6027;&#x529F;&#x80FD;</th>
+<th>Megatron</th>
+<th>Megatron &#x4EE3;&#x8868;&#x6027;&#x529F;&#x80FD;</th>
+<th>&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU &#x5E95;&#x5C42;&#x4F18;&#x5316;</td>
+<td>&#x6709;</td>
+<td>&#x5F00;&#x521B;&#x6027;&#x7684;&#x5168;&#x6808; GPU &#x5185;&#x6838;&#x8BBE;&#x8BA1; FP6 &#x91CF;&#x5316;</td>
+<td>&#x66F4;&#x725B;&#x903C;</td>
+<td>Fused CUDA Kernels</td>
+<td>Megatron &#x662F; NVIDIA &#x4EB2;&#x513F;&#x5B50;&#xFF0C;&#x5E95;&#x5C42;&#x4F18;&#x5316;&#x4FE1;&#x624B;&#x62C8;&#x6765;</td>
+</tr>
+<tr>
+<td>&#x6570;&#x636E;&#x5E76;&#x884C;</td>
+<td>&#x66F4;&#x725B;&#x903C;</td>
+<td>Zero &#x7CFB;&#x5217;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x6570;&#x636E;&#x5E76;&#x884C;&#x65B9;&#x6848;</td>
+<td>&#x6709;</td>
+<td>&#x4F18;&#x5316;&#x5668;&#x5206;&#x7247;</td>
+<td>Megatron &#x505A;&#x4E86;&#x7C7B;&#x4F3C; ZERO-1 &#x7684;&#x4F18;&#x5316;&#x5668;&#x5206;&#x7247;&#xFF0C;&#x4F46;&#x6570;&#x636E;&#x5E76;&#x884C;&#x6CA1;&#x6709; DeepSpeed &#x5F3A;</td>
+</tr>
+<tr>
+<td>&#x6A21;&#x578B;&#x5E76;&#x884C;</td>
+<td>&#x6709;</td>
+<td></td>
+<td>&#x66F4;&#x725B;&#x903C;</td>
+<td></td>
+<td>Megatron &#x7684;&#x5F20;&#x91CF;&#x5E76;&#x884C;&#x5F88;&#x725B;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="megatron-lm"><a name="megatron-lm" class="anchor-navigation-ex-anchor" href="#megatron-lm"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Megatron-LM</h2>
+<ol>
+<li>Megatron-LM-1: &#x5229;&#x7528;&#x4E86;&#x5F20;&#x91CF;&#x5E76;&#x884C;&#x548C;&#x6570;&#x636E;&#x5E76;&#x884C;&#x3002;</li>
+<li>Megatron-LM-2: &#x65B0;&#x589E;&#x4E86; pipeline &#x5E76;&#x884C;&#x2014;&#x2014;<code>virtual pipeline: 1F1B-interleaving</code>&#xFF0C;&#x6210;&#x4E3A;&#x548C; DeepSpeed &#x7C7B;&#x4F3C;&#x7684; 3D &#x5E76;&#x884C;&#x7684;&#x8BAD;&#x7EC3;&#x6846;&#x67B6;&#x3002;</li>
+<li>Megatron-LM-3: &#x589E;&#x52A0;&#x4E86;<code>Sequence Parallelism</code>&#x3001;<code>Selective Activation Recomputation</code> &#x548C; <code>Checkpointing Skipping</code>&#x3002;<ul>
+<li>Sequence Parallelism: &#x5728; Tensor Parallelism &#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x5C06; Transformer &#x6838;&#x7684; LayerNorm &#x4EE5;&#x53CA; Dropout &#x5C42;&#x7684;&#x8F93;&#x5165;&#x6309; Sequence Length &#x7EF4;&#x5EA6;&#x8FDB;&#x884C;&#x4E86;&#x5207;&#x5206;&#xFF0C;&#x4F7F;&#x5F97;&#x5404;&#x4E2A;&#x8BBE;&#x5907;&#x4E0A;&#x9762;&#x53EA;&#x9700;&#x8981;&#x505A;&#x4E00;&#x90E8;&#x5206;&#x7684;Dropout&#x548C;LayerNorm&#x3002;</li>
+</ul>
+</li>
+</ol>
+<h2 id="deepspeed"><a name="deepspeed" class="anchor-navigation-ex-anchor" href="#deepspeed"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. DeepSpeed</h2>
+<p>DeepSpeed &#x5B9E;&#x73B0;&#x4E86;&#x4E09;&#x79CD;&#x5E76;&#x884C;&#x65B9;&#x6CD5;&#xFF08;&#x6570;&#x636E;&#x5E76;&#x884C;&#x8BAD;&#x7EC3;&#x3001;&#x6A21;&#x578B;&#x5E76;&#x884C;&#x8BAD;&#x7EC3;&#x548C;&#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;&#x8BAD;&#x7EC3;&#xFF09;&#x7684;&#x7075;&#x6D3B;&#x7EC4;&#x5408;&#xFF1A;&#x96F6;&#x5197;&#x4F59;&#x4F18;&#x5316;&#x8D77;&#xFF08;Zero Redundancy Optimizer, &#x7F29;&#x5199;&#x4E3A; ZeRO&#xFF09;&#x662F;&#x4E00;&#x79CD;&#x7528;&#x4E8E;&#x5927;&#x89C4;&#x6A21;&#x5206;&#x5E03;&#x5F0F;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x7684;&#x65B0;&#x578B;&#x5185;&#x5B58;&#x4F18;&#x5316;&#x6280;&#x672F;&#x3002;</p>
+<p>ZeRO &#x4F5C;&#x4E3A; DeepSpeed &#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x7528;&#x4E8E;&#x63D0;&#x9AD8;&#x663E;&#x5B58;&#x6548;&#x7387;&#x548C;&#x8BA1;&#x7B97;&#x6548;&#x7387;&#x3002;
+ZeRO &#x652F;&#x6301;&#x7684;&#x6570;&#x636E;&#x5E76;&#x884C;&#x3001;&#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;&#x548C;&#x5F20;&#x91CF;&#x5207;&#x7247;&#x6A21;&#x578B;&#x5E76;&#x884C;&#x3002;
+ZeRO &#x53EF;&#x4EE5;&#x514B;&#x670D;&#x6570;&#x636E;&#x5E76;&#x884C;&#x548C;&#x6A21;&#x578B;&#x5E76;&#x884C;&#x7684;&#x5C40;&#x9650;&#x6027;&#xFF0C;&#x540C;&#x4E8B;&#x5B9E;&#x73B0;&#x4E24;&#x8005;&#x7684;&#x4F18;&#x70B9;&#x3002;
+&#x901A;&#x8FC7;&#x5728;&#x6570;&#x636E;&#x5E76;&#x884C;&#x8FDB;&#x7A0B;&#x4E4B;&#x95F4;&#x5212;&#x5206;&#x6A21;&#x578B;&#x72B6;&#x6001;&#x53C2;&#x6570;&#x3001;&#x68AF;&#x5EA6;&#x548C;&#x4F18;&#x5316;&#x5668;&#x72B6;&#x6001;&#x6765;&#x6D88;&#x9664;&#x6570;&#x636E;&#x5E76;&#x884C;&#x8FDB;&#x7A0B;&#x4E2D;&#x7684;&#x5185;&#x5B58;&#x5197;&#x4F59;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x590D;&#x5236;&#x5B83;&#x4EEC;&#x3002;</p>
+<p>ZeRO &#x6709;&#x4E09;&#x4E2A;&#x4E3B;&#x8981;&#x7684;&#x4F18;&#x5316;&#x9636;&#x6BB5;&#xFF0C;&#x5B83;&#x4EEC;&#x5BF9;&#x5E94;&#x4F18;&#x5316;&#x5668;&#x72B6;&#x6001;&#x3001;&#x68AF;&#x5EA6;&#x548C;&#x53C2;&#x6570;&#x7684;&#x5212;&#x5206;&#xFF1A;</p>
+<ol>
+<li>Pos&#xFF1A;&#x51CF;&#x5C11; 4 &#x500D;&#x5185;&#x5B58;&#xFF0C;&#x901A;&#x4FE1;&#x91CF;&#x4E0E;&#x6570;&#x636E;&#x5E76;&#x884C;&#x6027;&#x76F8;&#x540C;</li>
+<li>Pos+g&#xFF1A;&#x51CF;&#x5C11; 8 &#x500D;&#x5185;&#x5B58;&#xFF0C;&#x901A;&#x4FE1;&#x91CF;&#x4E0E;&#x6570;&#x636E;&#x5E76;&#x884C;&#x6027;&#x76F8;&#x540C;</li>
+<li>Pos+g+p&#xFF1A;&#x5185;&#x5B58;&#x51CF;&#x5C11;&#x4E0E;&#x6570;&#x636E;&#x5E76;&#x884C;&#x5EA6; Nd &#x5448;&#x7EBF;&#x6027;&#x5173;&#x7CFB;&#x3002;</li>
+</ol>
+<p>ZeRO-3 offload &#x662F; ZeRO Stage 3 &#x548C; ZeRO offload &#x76F8;&#x7ED3;&#x5408;&#x7684;&#x4E00;&#x79CD;&#x9AD8;&#x6548;&#x4E14;&#x6613;&#x4E8E;&#x4F7F;&#x7528;&#x7684;&#x5B9E;&#x65BD;&#x65B9;&#x5F0F;&#x3002;
+&#x4E3B;&#x8981;&#x597D;&#x5904;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x6781;&#x9AD8;&#x7684;&#x5185;&#x5B58;&#x6548;&#x7387;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6709;&#x9650;&#x7684;GPU&#x8D44;&#x6E90;&#x4E0A;&#x8FD0;&#x884C;&#x975E;&#x5E38;&#x5927;&#x7684;&#x6A21;&#x578B;&#xFF1B;</li>
+<li>&#x6781;&#x6613;&#x4F7F;&#x7528;:&#x6269;&#x5C55;&#x5230;&#x8D85;&#x8FC7;&#x4E00;&#x4E07;&#x4EBF;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x4EE5;&#x590D;&#x6742;&#x7684;&#x65B9;&#x5F0F;&#x7EC4;&#x5408;&#x591A;&#x79CD;&#x5E76;&#x884C;&#x6280;&#x672F;&#xFF1B;</li>
+<li>&#x6BCF;&#x4E2A;GPU&#x7684;&#x9AD8;&#x6027;&#x80FD;&#x541E;&#x5410;&#x91CF;&#x548C;&#x8DE8;GPU&#x7684;&#x8D85;&#x7EBF;&#x6027;&#x53EF;&#x6269;&#x5C55;&#x6027;&#xFF0C;&#x7528;&#x4E8E;&#x5206;&#x5E03;&#x5F0F;&#x8BAD;&#x7EC3;&#x3002;</li>
+</ol>
+<h2 id="megatron-deepspeed"><a name="megatron-deepspeed" class="anchor-navigation-ex-anchor" href="#megatron-deepspeed"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Megatron-DeepSpeed</h2>
+<p>176B BLOOM &#x4F7F;&#x7528; <a href="https://github.com/bigscience-workshop/Megatron-DeepSpeed" target="_blank">Megatron-DeepSpeed</a>&#x8FDB;&#x884C;&#x8BAD;&#x7EC3;&#xFF0C;&#x7ED3;&#x5408;&#x4E86;&#x4E24;&#x79CD;&#x6280;&#x672F;&#xFF1A;</p>
+<ul>
+<li><a href="https://github.com/microsoft/DeepSpeed" target="_blank">DeepSpeed</a>: &#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x4F18;&#x5316;&#x5E93;&#xFF0C;&#x8BA9;&#x5206;&#x5E03;&#x5F0F;&#x8BAD;&#x7EC3;&#x53D8;&#x5F97;&#x7B80;&#x5355;&#x3001;&#x9AD8;&#x6548;&#x4E14;&#x6709;&#x6548;;</li>
+<li><a href="https://github.com/NVIDIA/Megatron-LM" target="_blank">Megatron-LM</a>: NVIDIA &#x7684;&#x5E94;&#x7528;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x7814;&#x7A76;&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x7684;&#x5927;&#x578B;&#x3001;&#x5F3A;&#x5927;&#x7684; transformer &#x6A21;&#x578B;&#x6846;&#x67B6;&#x3002;</li>
+</ul>
+<p>DeepSpeed &#x56E2;&#x961F;&#x5C06; DeepSpeed &#x5E93;&#x4E2D;&#x7684; ZeRO &#x5206;&#x7247;&#x548C;&#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;&#x4E0E; Megatron-LM &#x4E2D;&#x7684;&#x5F20;&#x91CF;&#x5E76;&#x884C;&#x76F8;&#x7ED3;&#x5408;&#xFF0C;&#x5F00;&#x53D1;&#x4E86;&#x4E00;&#x79CD;&#x57FA;&#x4E8E; 3D &#x5E76;&#x884C;&#x7684;&#x65B9;&#x6848;&#x3002;</p>
+<p>&#x8BAD;&#x7EC3; BLOOM &#x65F6;&#x91C7;&#x7528;&#x4E86;&#x4E24;&#x4E2A;&#x6846;&#x67B6;&#x7684;&#x4EE5;&#x4E0B;&#x7EC4;&#x4EF6;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x7EC4;&#x4EF6;</th>
+<th>DeepSpeed</th>
+<th>Megatron-LM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ZeRO &#x6570;&#x636E;&#x5E76;&#x884C;</td>
+<td>&#x662F;</td>
+<td></td>
+</tr>
+<tr>
+<td>&#x5F20;&#x91CF;&#x5E76;&#x884C;</td>
+<td></td>
+<td>&#x662F;</td>
+</tr>
+<tr>
+<td>&#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;</td>
+<td>&#x662F;</td>
+<td></td>
+</tr>
+<tr>
+<td>BF16 &#x4F18;&#x5316;&#x5668;</td>
+<td>&#x662F;</td>
+<td></td>
+</tr>
+<tr>
+<td>CUDA &#x878D;&#x5408;&#x6838;&#x51FD;&#x6570;</td>
+<td></td>
+<td>&#x662F;</td>
+</tr>
+<tr>
+<td>DataLoader</td>
+<td></td>
+<td>&#x662F;</td>
+</tr>
+</tbody>
+</table>
+<p>Megatron-LM &#x548C; DeepSpeed &#x90FD;&#x6709;&#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;&#x548C; BF16 &#x4F18;&#x5316;&#x5668;&#x5B9E;&#x73B0;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x4F7F;&#x7528; DeepSpeed &#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x96C6;&#x6210;&#x4E86; ZeRO&#x3002;</p>
+<p>Megatron-DeepSpeed &#x5B9E;&#x73B0;&#x4E86; 3D &#x5E76;&#x884C;&#x4EE5;&#x5141;&#x8BB8;&#x5927;&#x6A21;&#x578B;&#x4EE5;&#x975E;&#x5E38;&#x6709;&#x6548;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x8BAD;&#x7EC3;&#x3002;</p>
+<ol>
+<li>&#x6570;&#x636E;&#x5E76;&#x884C;(Data Parallelism, DP): &#x76F8;&#x540C;&#x7684;&#x8BBE;&#x7F6E;&#x548C;&#x6A21;&#x578B;&#x88AB;&#x590D;&#x5236;&#x591A;&#x4EFD;&#xFF0C;&#x6BCF;&#x4EFD;&#x6BCF;&#x6B21;&#x90FD;&#x88AB;&#x9988;&#x9001;&#x4E0D;&#x540C;&#x7684;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#x3002;&#x5904;&#x7406;&#x662F;&#x5E76;&#x884C;&#x5B8C;&#x6210;&#x7684;&#xFF0C;&#x6240;&#x6709;&#x4EFD;&#x5728;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x6B65;&#x7ED3;&#x675F;&#x65F6;&#x540C;&#x6B65;&#x3002;</li>
+<li>&#x5F20;&#x91CF;&#x5E76;&#x884C;(Tensor Parallelism, TP): &#x6BCF;&#x4E2A;&#x5F20;&#x91CF;&#x88AB;&#x5206;&#x6210;&#x591A;&#x4E2A;&#x5757;&#xFF0C;&#x56E0;&#x6B64;&#x5F20;&#x91CF;&#x7684;&#x6BCF;&#x4E2A;&#x5206;&#x7247;&#x90FD;&#x4F4D;&#x4E8E;&#x5176;&#x6307;&#x5B9A;&#x7684; GPU &#x4E0A;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x8BA9;&#x6574;&#x4E2A;&#x5F20;&#x91CF;&#x9A7B;&#x7559;&#x5728;&#x5355;&#x4E2A; GPU &#x4E0A;&#x3002;&#x5728;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x5206;&#x7247;&#x5728;&#x4E0D;&#x540C;&#x7684; GPU &#x4E0A;&#x5206;&#x522B;&#x5E76;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x7ED3;&#x679C;&#x5728;&#x6B65;&#x9AA4;&#x7ED3;&#x675F;&#x65F6;&#x540C;&#x6B65;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x6240;&#x8C13;&#x7684;&#x6C34;&#x5E73;&#x5E76;&#x884C;&#xFF0C;&#x56E0;&#x4E3A;&#x662F;&#x505A;&#x7684;&#x6C34;&#x5E73;&#x62C6;&#x5206;&#x3002;</li>
+<li>&#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;(Pipeline Parallelism, PP): &#x6A21;&#x578B;&#x5728;&#x591A;&#x4E2A; GPU &#x4E0A;&#x5782;&#x76F4;&#xFF08;&#x5373;&#x6309;&#x5C42;&#xFF09;&#x62C6;&#x5206;&#xFF0C;&#x56E0;&#x6B64;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6A21;&#x578B;&#x5C42;&#x653E;&#x7F6E;&#x5728;&#x5355;&#x4E2A; GPU &#x4E0A;&#x3002;&#x6BCF;&#x4E2A; GPU &#x5E76;&#x884C;&#x5904;&#x7406;&#x6D41;&#x6C34;&#x7EBF;&#x7684;&#x4E0D;&#x540C;&#x9636;&#x6BB5;&#xFF0C;&#x5E76;&#x5904;&#x7406; batch &#x7684;&#x4E00;&#x90E8;&#x5206;&#x6570;&#x636E;&#x3002;</li>
+<li>&#x96F6;&#x5197;&#x4F59;&#x4F18;&#x5316;&#x5668;(Zero Redundancy Optimizer, ZeRO)&#xFF1A;&#x6267;&#x884C;&#x4E0E; TP &#x7C7B;&#x4F3C;&#x7684;&#x5F20;&#x91CF;&#x5206;&#x7247;&#xFF0C;&#x4F46;&#x6574;&#x4E2A;&#x5F20;&#x91CF;&#x4F1A;&#x53CA;&#x65F6;&#x91CD;&#x5EFA;&#x4EE5;&#x8FDB;&#x884C;&#x524D;&#x5411;&#x6216;&#x53CD;&#x5411;&#x8BA1;&#x7B97;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x6A21;&#x578B;&#x3002;&#x8FD8;&#x652F;&#x6301;&#x5404;&#x79CD;&#x5378;&#x8F7D;&#x6280;&#x672F;&#x4EE5;&#x8865;&#x507F;&#x6709;&#x9650;&#x7684; GPU &#x5185;&#x5B58;&#x3002;</li>
+</ol>
+<h3 id="&#x6570;&#x636E;&#x5E76;&#x884C;"><a name="&#x6570;&#x636E;&#x5E76;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5E76;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. &#x6570;&#x636E;&#x5E76;&#x884C;</h3>
+<p>&#x5728;&#x8BE5;&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x6A21;&#x578B;&#x88AB;&#x5B8C;&#x5168;&#x590D;&#x5236;&#x5230;&#x6BCF;&#x4E2A; GPU&#xFF0C;&#x7136;&#x540E;&#x5728;&#x6BCF;&#x6B21;&#x8FED;&#x4EE3;&#x540E;&#x6240;&#x6709;&#x6A21;&#x578B;&#x76F8;&#x4E92;&#x540C;&#x6B65;&#x5404;&#x81EA;&#x7684;&#x72B6;&#x6001;&#x3002;
+&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6295;&#x5165;&#x66F4;&#x591A; GPU &#x8D44;&#x6E90;&#x7684;&#x65B9;&#x5F0F;&#x52A0;&#x5FEB;&#x8BAD;&#x7EC3;&#x901F;&#x5EA6;&#xFF0C;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x3002;
+&#x4F46;&#x5B83;&#x6709;&#x4E2A;&#x9650;&#x5236;&#xFF0C;&#x5373;&#x53EA;&#x6709;&#x5F53;&#x6A21;&#x578B;&#x80FD;&#x591F;&#x653E;&#x8FDB;&#x5355;&#x4E2A; GPU &#x65F6;&#x624D;&#x6709;&#x6548;&#x3002;</p>
+<h3 id="zero-&#x6570;&#x636E;&#x5E76;&#x884C;"><a name="zero-&#x6570;&#x636E;&#x5E76;&#x884C;" class="anchor-navigation-ex-anchor" href="#zero-&#x6570;&#x636E;&#x5E76;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. ZeRO &#x6570;&#x636E;&#x5E76;&#x884C;</h3>
+<p>ZeRO &#x6570;&#x636E;&#x5E76;&#x884C;&#x5C31;&#x662F;&#x901A;&#x5E38;&#x7684; DDP&#xFF0C;&#x53EA;&#x662F;&#x6CA1;&#x6709;&#x6BCF;&#x4E2A; GPU &#x90FD;&#x590D;&#x5236;&#x5B8C;&#x6574;&#x7684;&#x6A21;&#x578B;&#x53C2;&#x6570;&#x3001;&#x68AF;&#x5EA6;&#x548C;&#x4F18;&#x5316;&#x5668;&#x72B6;&#x6001;&#xFF0C;&#x800C;&#x662F;&#x6BCF;&#x4E2A; GPU &#x53EA;&#x5B58;&#x50A8;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;
+&#x5728;&#x968F;&#x540E;&#x7684;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5F53;&#x9700;&#x8981;&#x7ED9;&#x5B9A;&#x5C42;&#x7684;&#x5B8C;&#x6574;&#x5C42;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x6240;&#x6709; GPU &#x540C;&#x6B65;&#x4EE5;&#x76F8;&#x4E92;&#x63D0;&#x4F9B;&#x5B83;&#x4EEC;&#x7F3A;&#x5931;&#x7684;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x8BE5;&#x7EC4;&#x4EF6;&#x7531; DeepSpeed &#x5B9E;&#x73B0;&#x3002;</p>
+<h3 id="&#x5F20;&#x91CF;&#x5E76;&#x884C;"><a name="&#x5F20;&#x91CF;&#x5E76;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x5F20;&#x91CF;&#x5E76;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.3. &#x5F20;&#x91CF;&#x5E76;&#x884C;</h3>
+<p>&#x5728;&#x5F20;&#x91CF;&#x5E76;&#x884C;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A; GPU &#x4EC5;&#x5904;&#x7406;&#x5F20;&#x91CF;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x5E76;&#x4E14;&#x4EC5;&#x5F53;&#x67D0;&#x4E9B;&#x7B97;&#x5B50;&#x9700;&#x8981;&#x5B8C;&#x6574;&#x7684;&#x5F20;&#x91CF;&#x65F6;&#x624D;&#x89E6;&#x53D1;&#x805A;&#x5408;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>Transformer &#x7C7B;&#x6A21;&#x578B;&#x7684;&#x4E3B;&#x8981;&#x6A21;&#x5757;&#x4E3A;&#xFF1A;&#x4E00;&#x4E2A;&#x5168;&#x8FDE;&#x63A5;&#x5C42;<code>nn.Linear</code>&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x4E00;&#x4E2A;&#x975E;&#x7EBF;&#x6027;&#x6FC0;&#x6D3B;&#x5C42;<code>GeLU</code>&#x3002;</p>
+<p>&#x57FA;&#x4E8E;&#x6743;&#x91CD;&#x77E9;&#x9635;&#x6309;&#x5217;&#x62C6;&#x5206;&#xFF0C;&#x968F;&#x540E;&#x7684; GEMM &#x6309;&#x884C;&#x62C6;&#x5206;&#x65B9;&#x6848;&#xFF0C;&#x53EF;&#x4EE5;&#x66F4;&#x65B0;&#x4EFB;&#x610F;&#x6DF1;&#x5EA6;&#x7684; MLP&#xFF0C;&#x53EA;&#x9700;&#x5728;&#x6BCF;&#x4E2A;<code>&#x62C6;&#x5217;-&#x62C6;&#x884C;</code>&#x5E8F;&#x5217;&#x4E4B;&#x540E;&#x540C;&#x6B65; GPU&#x3002;</p>
+<p>&#x9700;&#x8981;&#x7279;&#x522B;&#x8003;&#x8651;&#x7684;&#x662F;: &#x7531;&#x4E8E;&#x524D;&#x5411;&#x548C;&#x540E;&#x5411;&#x4F20;&#x64AD;&#x4E2D;&#x6BCF;&#x5C42;&#x90FD;&#x6709;&#x4E24;&#x4E2A; all reduce&#xFF0C;&#x56E0;&#x6B64; TP &#x9700;&#x8981;&#x8BBE;&#x5907;&#x95F4;&#x6709;&#x975E;&#x5E38;&#x5FEB;&#x901F;&#x7684;&#x4E92;&#x8054;&#x3002;
+&#x56E0;&#x6B64;&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x6709;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x5FEB;&#x7684;&#x7F51;&#x7EDC;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x5EFA;&#x8BAE;&#x8DE8;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x8FDB;&#x884C; TP&#x3002;</p>
+<p>&#x8BE5;&#x7EC4;&#x4EF6;&#x7531; Megatron-LM &#x5B9E;&#x73B0;&#x3002;
+Megatron-LM &#x6700;&#x8FD1;&#x6269;&#x5C55;&#x4E86;&#x5F20;&#x91CF;&#x5E76;&#x884C;&#x80FD;&#x529B;&#xFF0C;&#x65B0;&#x589E;&#x4E86;&#x5E8F;&#x5217;&#x5E76;&#x884C;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x7528;&#x4E8E;&#x96BE;&#x4EE5;&#x4F7F;&#x7528;&#x524D;&#x8FF0;&#x5207;&#x5206;&#x7B97;&#x6CD5;&#x7684;&#x7B97;&#x5B50;&#xFF0C;&#x5982; LayerNorm&#x3002;</p>
+<h3 id="&#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;"><a name="&#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.4. &#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;</h3>
+<p>&#x6734;&#x7D20;&#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;&#x662F;&#x5C06;&#x6A21;&#x578B;&#x5404;&#x5C42;&#x5206;&#x7EC4;&#x5206;&#x5E03;&#x5728;&#x591A;&#x4E2A; GPU &#x4E0A;&#xFF0C;&#x5E76;&#x7B80;&#x5355;&#x5730;&#x5C06;&#x6570;&#x636E;&#x4ECE; GPU &#x79FB;&#x52A8;&#x5230; GPU&#x3002;
+&#x8BE5;&#x673A;&#x5236;&#x76F8;&#x5BF9;&#x7B80;&#x5355;-&#x5C06;&#x6240;&#x9700;&#x5C42;&#x7528;<code>.to()</code>&#x65B9;&#x6CD5;&#x7ED1;&#x5230;&#x76F8;&#x5E94;&#x8BBE;&#x5907;&#xFF0C;&#x73B0;&#x5728;&#x53EA;&#x8981;&#x6570;&#x636E;&#x8FDB;&#x51FA;&#x8FD9;&#x4E9B;&#x5C42;&#xFF0C;&#x8FD9;&#x4E9B;&#x5C42;&#x5C31;&#x4F1A;&#x5C06;&#x6570;&#x636E;&#x5207;&#x6362;&#x5230;&#x4E0E;&#x8BE5;&#x5C42;&#x76F8;&#x540C;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x5176;&#x4F59;&#x90E8;&#x5206;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#x3002;</p>
+<p>&#x8FD9;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x5782;&#x76F4;&#x6A21;&#x578B;&#x5E76;&#x884C;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4E0B;&#x56FE;&#x663E;&#x793A;&#x4E00;&#x4E2A; 8 &#x5C42;&#x6A21;&#x578B;:</p>
+<pre><code class="lang-text">===================  ===================
+|  0 | 1 | 2 | 3  |  |  4 | 5 | 6 | 7  |
+===================  ===================
+        GPU0                 GPU1
+</code></pre>
+<p>&#x5F53;&#x6570;&#x636E;&#x9700;&#x8981;&#x4ECE;&#x7B2C; 3 &#x5C42;&#x4F20;&#x5230;&#x7B2C; 4 &#x5C42;&#x65F6;&#xFF0C;&#x5B83;&#x9700;&#x8981;&#x4ECE; GPU0 &#x4F20;&#x8F93;&#x5230; GPU1&#xFF0C;&#x8FD9;&#x4F1A;&#x5F15;&#x5165;&#x901A;&#x4FE1;&#x5F00;&#x9500;&#x3002;
+&#x5982;&#x679C;&#x53C2;&#x4E0E;&#x7684; GPU &#x4F4D;&#x4E8E;&#x540C;&#x4E00;&#x8BA1;&#x7B97;&#x8282;&#x70B9; (&#x4F8B;&#x5982;&#x540C;&#x4E00;&#x53F0;&#x7269;&#x7406;&#x673A;&#x5668;) &#x4E0A;&#xFF0C;&#x5219;&#x4F20;&#x8F93;&#x975E;&#x5E38;&#x5FEB;&#xFF0C;&#x4F46;&#x5982;&#x679C; GPU &#x4F4D;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x8BA1;&#x7B97;&#x8282;&#x70B9; (&#x4F8B;&#x5982;&#x591A;&#x53F0;&#x673A;&#x5668;) &#x4E0A;&#xFF0C;&#x901A;&#x4FE1;&#x5F00;&#x9500;&#x53EF;&#x80FD;&#x4F1A;&#x5927;&#x5F97;&#x591A;&#x3002;</p>
+<p><strong>&#x95EE;&#x9898;</strong></p>
+<ul>
+<li>&#x8BE5;&#x65B9;&#x6CD5;&#x4E3A;&#x4EC0;&#x4E48;&#x88AB;&#x79F0;&#x4E3A; &#x6734;&#x7D20; &#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;&#x5462;&#xFF0C;&#x5B83;&#x53C8;&#x6709;&#x4EC0;&#x4E48;&#x7F3A;&#x9677;&#x5462;&#xFF1F;&#x4E3B;&#x8981;&#x662F;&#x56E0;&#x4E3A;<strong>&#x8BE5;&#x65B9;&#x6848;&#x5728;&#x4EFB;&#x610F;&#x7ED9;&#x5B9A;&#x65F6;&#x523B;&#x9664;&#x4E86;&#x4E00;&#x4E2A; GPU &#x4E4B;&#x5916;&#x7684;&#x5176;&#x4ED6;&#x6240;&#x6709; GPU &#x90FD;&#x662F;&#x7A7A;&#x95F2;&#x7684;</strong>&#x3002;</li>
+<li>&#x5171;&#x4EAB;&#x5D4C;&#x5165;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5728; GPU &#x4E4B;&#x95F4;&#x6765;&#x56DE;&#x590D;&#x5236;&#x3002;&#x4F5C;&#x8005;&#x4F7F;&#x7528;&#x7684;&#x6D41;&#x6C34;&#x7EBF;&#x5E76;&#x884C;&#xFF08;PP&#xFF09;&#x4E0E;&#x4E0A;&#x8FF0;&#x6734;&#x7D20; PP &#x51E0;&#x4E4E;&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x5B83;&#x89E3;&#x51B3;&#x4E86; GPU &#x95F2;&#x7F6E;&#x95EE;&#x9898;&#xFF0C;&#x65B9;&#x6CD5;&#x662F;&#x5C06;&#x4F20;&#x5165;&#x7684; batch &#x5206;&#x5757;&#x4E3A; micros batch &#x5E76;&#x4EBA;&#x5DE5;&#x521B;&#x5EFA;&#x6D41;&#x6C34;&#x7EBF;&#xFF0C;&#x4ECE;&#x800C;&#x5141;&#x8BB8;&#x4E0D;&#x540C;&#x7684; GPU &#x540C;&#x65F6;&#x53C2;&#x4E0E;&#x8BA1;&#x7B97;&#x8FC7;&#x7A0B;&#x3002;</li>
+</ul>
+<h3 id="dp--pp"><a name="dp--pp" class="anchor-navigation-ex-anchor" href="#dp--pp"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.5. DP + PP</h3>
+<p>DeepSpeed &#x6D41;&#x6C34;&#x7EBF; &#x5E76;&#x884C;&#x6559;&#x7A0B; &#x4E2D;&#x6709;&#x4E00;&#x5F20;&#x56FE;&#x6F14;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x5C06; DP &#x4E0E; PP &#x7ED3;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;:
+<img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/parallelism-zero-dp-pp.png" alt="DP+PP"></p>
+<p>DP rank 0 &#x662F;&#x770B;&#x4E0D;&#x89C1; GPU2 &#x7684;&#xFF0C; DP rank 1 &#x662F;&#x770B;&#x4E0D;&#x5230; GPU3 &#x7684;&#x3002;&#x5BF9;&#x4E8E; DP &#x800C;&#x8A00;&#xFF0C;&#x53EA;&#x6709; GPU 0 &#x548C; 1&#xFF0C;&#x5E76;&#x5411;&#x5B83;&#x4EEC;&#x9988;&#x9001;&#x6570;&#x636E;&#x3002;GPU0 &#x4F7F;&#x7528; PP &#x201C;&#x79D8;&#x5BC6;&#x5730;&#x201D; &#x5C06;&#x5B83;&#x7684;&#x4E00;&#x4E9B;&#x8D1F;&#x8F7D;&#x5378;&#x8F7D;&#x5230; GPU2&#x3002;&#x540C;&#x6837;&#x5730;&#xFF0C; GPU1 &#x4E5F;&#x4F1A;&#x5F97;&#x5230; GPU3 &#x7684;&#x5E2E;&#x52A9;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x6BCF;&#x4E2A;&#x7EF4;&#x5EA6;&#x81F3;&#x5C11;&#x9700;&#x8981; 2 &#x4E2A; GPU&#xFF0C;&#x56E0;&#x6B64;&#x8FD9;&#x513F;&#x81F3;&#x5C11;&#x9700;&#x8981; 4 &#x4E2A; GPU&#x3002;</p>
+<h3 id="dppptp"><a name="dppptp" class="anchor-navigation-ex-anchor" href="#dppptp"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.6. DP+PP+TP</h3>
+<p>&#x5C06; PP&#x3001;TP &#x548C; DP &#x76F8;&#x7ED3;&#x5408;&#xFF0C;&#x79F0;&#x4E3A; 3D &#x5E76;&#x884C;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;
+<img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/parallelism-deepspeed-3d.png" alt="3D Parallelism"></p>
+<p>&#x7531;&#x4E8E;&#x6BCF;&#x4E2A;&#x7EF4;&#x5EA6;&#x81F3;&#x5C11;&#x9700;&#x8981; 2 &#x4E2A; GPU&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x8FD9;&#x91CC;&#x4F60;&#x81F3;&#x5C11;&#x9700;&#x8981; 8 &#x4E2A; GPU &#x624D;&#x80FD;&#x5B9E;&#x73B0;&#x5B8C;&#x6574;&#x7684; 3D &#x5E76;&#x884C;&#x3002;</p>
+<h3 id="zero-dppptp"><a name="zero-dppptp" class="anchor-navigation-ex-anchor" href="#zero-dppptp"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.7. ZeRO DP+PP+TP</h3>
+<p>DeepSpeed &#x7684;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x4E4B;&#x4E00;&#x662F; ZeRO&#xFF0C;&#x5B83;&#x662F; DP &#x7684;&#x8D85;&#x7EA7;&#x53EF;&#x4F38;&#x7F29;&#x589E;&#x5F3A;&#x7248;&#x3002;
+&#x901A;&#x5E38;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4E0D;&#x9700;&#x8981; PP &#x6216; TP&#x3002;&#x4F46;&#x5B83;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0E; PP&#x3001;TP &#x7ED3;&#x5408;&#x4F7F;&#x7528;&#x3002;</p>
+<ul>
+<li>ZeRO-DP &#x4E0E; PP&#xFF08;&#x4EE5;&#x53CA; TP&#xFF09;&#x7ED3;&#x5408;&#x65F6;&#xFF0C;&#x901A;&#x5E38;&#x53EA;&#x542F;&#x7528; ZeRO &#x9636;&#x6BB5; 1&#xFF0C;&#x53EA;&#x5BF9;&#x4F18;&#x5316;&#x5668;&#x72B6;&#x6001;&#x8FDB;&#x884C;&#x5206;&#x7247;&#x3002;</li>
+<li>&#x7531;&#x4E8E; PP&#xFF0C;&#x5C42;&#x6570;&#x5DF2;&#x7ECF;&#x6BD4;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x5C11;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x4F1A;&#x8282;&#x7701;&#x5F88;&#x591A;&#x5185;&#x5B58;&#x3002;PP &#x5DF2;&#x7ECF;&#x5C06;&#x68AF;&#x5EA6;&#x5927;&#x5C0F;&#x51CF;&#x5C11;&#x4E86; <code>1/pp</code>&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x6B64;&#x57FA;&#x7840;&#x4E0A;&#x7684;&#x68AF;&#x5EA6;&#x5206;&#x7247;&#x548C;&#x7EAF; DP &#x76F8;&#x6BD4;&#x8282;&#x7701;&#x4E0D;&#x4E86;&#x591A;&#x5C11;&#x5185;&#x5B58;&#x3002;</li>
+</ul>
+<h3 id="bf16-optimizer"><a name="bf16-optimizer" class="anchor-navigation-ex-anchor" href="#bf16-optimizer"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.8. BF16 Optimizer</h3>
+<p>&#x7528; FP16 &#x8BAD;&#x7EC3;&#x5927;&#x578B; LLM &#x6A21;&#x578B;&#x662F;&#x4E00;&#x4E2A;&#x7981;&#x5FCC;&#x3002;
+BF16 &#x683C;&#x5F0F;&#x7684;&#x5173;&#x952E;&#x662F;&#x5B83;&#x7684;&#x6307;&#x6570;&#x4F4D;&#x6570;&#x4E0E; FP32 &#x76F8;&#x540C;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x4F1A;&#x6EA2;&#x51FA;&#xFF0C;&#x4F46; FP16 &#x7ECF;&#x5E38;&#x6EA2;&#x51FA;&#xFF01;
+FP16 &#x7684;&#x6700;&#x5927;&#x6570;&#x503C;&#x8303;&#x56F4;&#x4E3A; 64k&#xFF0C;&#x60A8;&#x53EA;&#x80FD;&#x8FDB;&#x884C;&#x8F83;&#x5C0F;&#x6570;&#x7684;&#x4E58;&#x6CD5;&#x3002;
+&#x4F8B;&#x5982;&#x4F60;&#x53EF;&#x4EE5;&#x505A; 250<em>250=62500&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x4F60;&#x5C1D;&#x8BD5; 255</em>255=65025&#xFF0C;&#x4F60;&#x5C31;&#x4F1A;&#x6EA2;&#x51FA;&#xFF0C;&#x8FD9;&#x662F;&#x5BFC;&#x81F4;&#x8BAD;&#x7EC3;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x7684;&#x4E3B;&#x8981;&#x539F;&#x56E0;&#x3002;
+&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4F60;&#x7684;&#x6743;&#x91CD;&#x5FC5;&#x987B;&#x4FDD;&#x6301;&#x5F88;&#x5C0F;&#x3002;
+&#x4E00;&#x79CD;&#x79F0;&#x4E3A;&#x635F;&#x5931;&#x7F29;&#x653E; (loss scaling) &#x7684;&#x6280;&#x672F;&#x6709;&#x52A9;&#x4E8E;&#x7F13;&#x89E3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x6A21;&#x578B;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x5927;&#x65F6;&#xFF0C;FP16 &#x8F83;&#x5C0F;&#x7684;&#x6570;&#x503C;&#x8303;&#x56F4;&#x4ECD;&#x7136;&#x662F;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x65E0;&#x8BBA;&#x4F7F;&#x7528; BF16 &#x8FD8;&#x662F; FP16&#xFF0C;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x6743;&#x91CD;&#x526F;&#x672C;&#x59CB;&#x7EC8;&#x5728; FP32 &#x4E2D;&#x2014;&#x2014;&#x8FD9;&#x662F;&#x7531;&#x4F18;&#x5316;&#x5668;&#x66F4;&#x65B0;&#x7684;&#x5185;&#x5BB9;&#x3002;
+&#x56E0;&#x6B64; 16 &#x4F4D;&#x683C;&#x5F0F;&#x4EC5;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#xFF0C;&#x4F18;&#x5316;&#x5668;&#x4EE5;&#x5168;&#x7CBE;&#x5EA6;&#x66F4;&#x65B0; FP32 &#x6743;&#x91CD;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5B83;&#x4EEC;&#x8F6C;&#x6362;&#x4E3A; 16 &#x4F4D;&#x683C;&#x5F0F;&#x4EE5;&#x7528;&#x4E8E;&#x4E0B;&#x4E00;&#x6B21;&#x8FED;&#x4EE3;&#x3002;</p>
+<hr>
+<p>References:</p>
+<ul>
+<li><a href="https://blog.csdn.net/lianghuaju/article/details/138897906" target="_blank">DeepSpeed&#x4E0E;Megatron&#x7684;&#x533A;&#x522B;&#x548C;&#x8054;&#x7CFB;</a></li>
+<li><a href="http://www.uml.org.cn/ai/202311304.asp" target="_blank">&#x5927;&#x6A21;&#x578B;-LLM&#x5206;&#x5E03;&#x5F0F;&#x8BAD;&#x7EC3;&#x6846;&#x67B6;&#x603B;&#x7ED3;</a></li>
+<li><a href="https://huggingface.co/blog/zh/bloom-megatron-deepspeed" target="_blank">&#x5343;&#x4EBF;&#x53C2;&#x6570;&#x5F00;&#x6E90;&#x5927;&#x6A21;&#x578B; BLOOM &#x80CC;&#x540E;&#x7684;&#x6280;&#x672F;</a></li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x7248;&#x6743;&#x4FE1;&#x606F; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;: 
+2024-12-17 13:56:38
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="overview.html" class="navigation navigation-prev " aria-label="Previous page: 分布式训练">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="data-parallel.html" class="navigation navigation-next " aria-label="Next page: 数据并行">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"分布式训练框架","level":"1.3.1.1","depth":3,"next":{"title":"数据并行","level":"1.3.1.2","depth":3,"path":"Chap2-Training_Evaluation/distributed-training/data-parallel.md","ref":"Chap2-Training_Evaluation/distributed-training/data-parallel.md","articles":[]},"previous":{"title":"分布式训练","level":"1.3.1","depth":2,"path":"Chap2-Training_Evaluation/distributed-training/overview.md","ref":"Chap2-Training_Evaluation/distributed-training/overview.md","articles":[{"title":"分布式训练框架","level":"1.3.1.1","depth":3,"path":"Chap2-Training_Evaluation/distributed-training/train-framework.md","ref":"Chap2-Training_Evaluation/distributed-training/train-framework.md","articles":[]},{"title":"数据并行","level":"1.3.1.2","depth":3,"path":"Chap2-Training_Evaluation/distributed-training/data-parallel.md","ref":"Chap2-Training_Evaluation/distributed-training/data-parallel.md","articles":[]},{"title":"流水线并行","level":"1.3.1.3","depth":3,"path":"Chap2-Training_Evaluation/distributed-training/pipeline-parallel.md","ref":"Chap2-Training_Evaluation/distributed-training/pipeline-parallel.md","articles":[]},{"title":"张量并行","level":"1.3.1.4","depth":3,"path":"Chap2-Training_Evaluation/distributed-training/pipeline-parallel.md","ref":"Chap2-Training_Evaluation/distributed-training/pipeline-parallel.md","articles":[]},{"title":"MoE 并行","level":"1.3.1.5","depth":3,"path":"Chap2-Training_Evaluation/distributed-training/moe-parallel.md","ref":"Chap2-Training_Evaluation/distributed-training/moe-parallel.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","back-to-top-button","expandable-chapters","chapter-fold","splitter","code","github","tbfed-pagefooter","pageview-count","copy-code-button","anchor-navigation-ex","katex-pp"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy 版权信息","modify_label":"该文件修订时间: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/KKenny0/LLMpedia"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"back-to-top-button":{},"pageview-count":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex-pp":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","keywords":"AI,LLM,笔记","author":"Kenny Wu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LLMpedia","introduction":{"path":"README.md","title":"LLMpedia"},"gitbook":"*","description":"搜集和分享个人喜欢的大语言模型（LLM）相关资源的在线百科全书。"},"file":{"path":"Chap2-Training_Evaluation/distributed-training/train-framework.md","mtime":"2024-12-17T05:56:38.017Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-17T06:00:10.969Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
