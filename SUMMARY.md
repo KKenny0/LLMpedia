@@ -15,6 +15,7 @@
 
 * [训练与评估](Chap2-Training_Evaluation/README.md)
   * [分布式训练](Chap2-Training_Evaluation/distributed-training/overview.md)
+    * [分布式训练框架](Chap2-Training_Evaluation/distributed-training/train-framework.md) 
     * [数据并行](Chap2-Training_Evaluation/distributed-training/data-parallel.md)
     * [流水线并行](Chap2-Training_Evaluation/distributed-training/pipeline-parallel.md)
     * [张量并行](Chap2-Training_Evaluation/distributed-training/pipeline-parallel.md)
