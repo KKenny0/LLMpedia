@@ -4,6 +4,7 @@
 
 * [模型结构](Chap1-ModelArch/README.md)
   * Transformer 架构与模型
+    * [Transformer 结构-Wiki](Chap1-ModelArch/transformer_arch/Infrastructure_transformer_wiki.md)  
     * [Transformer 可视化解释](Chap1-ModelArch/transformer_arch/Infrastructure_transformer_transformer-explainer.md)
     * [土猛的员外-Transformer 架构的整体指南](Chap1-ModelArch/transformer_arch/Infrastructure_luxiangdong_Transformer-OverallArch.md)
     * [Encoder 模型](Chap1-ModelArch/transformer_arch/Infrastructure_HF_Encoder-models.md)
