@@ -1,0 +1,1336 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Top 20+ RAG Interview Questions · LLMpedia</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Kenny Wu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex-pp/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="rag_intro_luxiangdong.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chap1-ModelArch/">
+            
+                <a href="../Chap1-ModelArch/">
+            
+                    
+                    模型结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    Transformer 架构与模型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../Chap1-ModelArch/transformer_arch/Infrastructure_transformer_wiki.html">
+            
+                <a href="../Chap1-ModelArch/transformer_arch/Infrastructure_transformer_wiki.html">
+            
+                    
+                    Transformer 结构-Wiki
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../Chap1-ModelArch/transformer_arch/Infrastructure_transformer_transformer-explainer.html">
+            
+                <a href="../Chap1-ModelArch/transformer_arch/Infrastructure_transformer_transformer-explainer.html">
+            
+                    
+                    Transformer 可视化解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../Chap1-ModelArch/transformer_arch/Infrastructure_luxiangdong_Transformer-OverallArch.html">
+            
+                <a href="../Chap1-ModelArch/transformer_arch/Infrastructure_luxiangdong_Transformer-OverallArch.html">
+            
+                    
+                    土猛的员外-Transformer 架构的整体指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../Chap1-ModelArch/transformer_arch/Infrastructure_HF_Encoder-models.html">
+            
+                <a href="../Chap1-ModelArch/transformer_arch/Infrastructure_HF_Encoder-models.html">
+            
+                    
+                    Encoder 模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../Chap1-ModelArch/transformer_arch/Infrastructure_HF_Decoder-models.html">
+            
+                <a href="../Chap1-ModelArch/transformer_arch/Infrastructure_HF_Decoder-models.html">
+            
+                    
+                    Decoder 模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../Chap1-ModelArch/transformer_arch/Infrastructure_HF_Encoder-Decoder-models.html">
+            
+                <a href="../Chap1-ModelArch/transformer_arch/Infrastructure_HF_Encoder-Decoder-models.html">
+            
+                    
+                    Encoder-Decoder 模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    注意力机制
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../Chap1-ModelArch/attention/Advanced_Blog_AttentionAttention.html">
+            
+                <a href="../Chap1-ModelArch/attention/Advanced_Blog_AttentionAttention.html">
+            
+                    
+                    Lilian-Attention?Attention!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../Chap1-ModelArch/attention/mha-related.html">
+            
+                <a href="../Chap1-ModelArch/attention/mha-related.html">
+            
+                    
+                    缓存优化与效果-KV
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chap2-Training_Evaluation/">
+            
+                <a href="../Chap2-Training_Evaluation/">
+            
+                    
+                    训练与评估
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chap2-Training_Evaluation/distributed-training/overview.html">
+            
+                <a href="../Chap2-Training_Evaluation/distributed-training/overview.html">
+            
+                    
+                    分布式训练
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../Chap2-Training_Evaluation/distributed-training/train-framework.html">
+            
+                <a href="../Chap2-Training_Evaluation/distributed-training/train-framework.html">
+            
+                    
+                    分布式训练框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../Chap2-Training_Evaluation/distributed-training/data-parallel.html">
+            
+                <a href="../Chap2-Training_Evaluation/distributed-training/data-parallel.html">
+            
+                    
+                    数据并行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../Chap2-Training_Evaluation/distributed-training/pipeline-parallel.html">
+            
+                <a href="../Chap2-Training_Evaluation/distributed-training/pipeline-parallel.html">
+            
+                    
+                    流水线并行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../Chap2-Training_Evaluation/distributed-training/pipeline-parallel.html">
+            
+                <a href="../Chap2-Training_Evaluation/distributed-training/pipeline-parallel.html">
+            
+                    
+                    张量并行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../Chap2-Training_Evaluation/distributed-training/moe-parallel.html">
+            
+                <a href="../Chap2-Training_Evaluation/distributed-training/moe-parallel.html">
+            
+                    
+                    MoE 并行
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chap2-Training_Evaluation/fine-tuning/overview.html">
+            
+                <a href="../Chap2-Training_Evaluation/fine-tuning/overview.html">
+            
+                    
+                    微调
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../Chap2-Training_Evaluation/fine-tuning/llm-training-ybq.html">
+            
+                <a href="../Chap2-Training_Evaluation/fine-tuning/llm-training-ybq.html">
+            
+                    
+                    LLM 训练-ybq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../Chap2-Training_Evaluation/fine-tuning/finetuning-discussion.html">
+            
+                <a href="../Chap2-Training_Evaluation/fine-tuning/finetuning-discussion.html">
+            
+                    
+                    关于微调的讨论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../Chap2-Training_Evaluation/fine-tuning/pretrain.html">
+            
+                <a href="../Chap2-Training_Evaluation/fine-tuning/pretrain.html">
+            
+                    
+                    预训练
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../Chap2-Training_Evaluation/fine-tuning/prompt-tuning.html">
+            
+                <a href="../Chap2-Training_Evaluation/fine-tuning/prompt-tuning.html">
+            
+                    
+                    Prompt-Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../Chap2-Training_Evaluation/fine-tuning/adapter-tuning.html">
+            
+                <a href="../Chap2-Training_Evaluation/fine-tuning/adapter-tuning.html">
+            
+                    
+                    Adapter-Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../Chap2-Training_Evaluation/fine-tuning/lora.html">
+            
+                <a href="../Chap2-Training_Evaluation/fine-tuning/lora.html">
+            
+                    
+                    LoRA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.7" data-path="../Chap2-Training_Evaluation/fine-tuning/summary.html">
+            
+                <a href="../Chap2-Training_Evaluation/fine-tuning/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Chap2-Training_Evaluation/evaluation/">
+            
+                <a href="../Chap2-Training_Evaluation/evaluation/">
+            
+                    
+                    大模型评估
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../Chap2-Training_Evaluation/evaluation/evaluating.html">
+            
+                <a href="../Chap2-Training_Evaluation/evaluation/evaluating.html">
+            
+                    
+                    评测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../Chap2-Training_Evaluation/evaluation/hallucination.html">
+            
+                <a href="../Chap2-Training_Evaluation/evaluation/hallucination.html">
+            
+                    
+                    幻觉
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <span>
+            
+                    
+                    蒸馏和压缩
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" >
+            
+                <span>
+            
+                    
+                    知识蒸馏
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" >
+            
+                <span>
+            
+                    
+                    剪枝和量化
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chap3-PromptEngr/">
+            
+                <a href="../Chap3-PromptEngr/">
+            
+                    
+                    Prompt 工程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    Prompt 技术
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../Chap3-PromptEngr/prompt-tech_baoyu_how-to-write-good-prompt.html">
+            
+                <a href="../Chap3-PromptEngr/prompt-tech_baoyu_how-to-write-good-prompt.html">
+            
+                    
+                    宝玉老师-如何写好提示词？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    应用场景
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../Chap3-PromptEngr/prompt-app_openai-prompt-generation.html">
+            
+                <a href="../Chap3-PromptEngr/prompt-app_openai-prompt-generation.html">
+            
+                    
+                    OpenAI-生成提示词的提示词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../Chap3-PromptEngr/prompt-app_baoyu_translator-gpt-prompt.html">
+            
+                <a href="../Chap3-PromptEngr/prompt-app_baoyu_translator-gpt-prompt.html">
+            
+                    
+                    GPT 翻译 Prompt
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chap4-InferAndOpt/">
+            
+                <a href="../Chap4-InferAndOpt/">
+            
+                    
+                    推理与优化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Chap4-InferAndOpt/llm-inference-overview.html">
+            
+                <a href="../Chap4-InferAndOpt/llm-inference-overview.html">
+            
+                    
+                    LLM 推理过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Chap4-InferAndOpt/infer-framework.html">
+            
+                <a href="../Chap4-InferAndOpt/infer-framework.html">
+            
+                    
+                    LLM 推理框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Chap4-InferAndOpt/vllm-framework.html">
+            
+                <a href="../Chap4-InferAndOpt/vllm-framework.html">
+            
+                    
+                    vLLM 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Chap4-InferAndOpt/llm-inference-param.html">
+            
+                <a href="../Chap4-InferAndOpt/llm-inference-param.html">
+            
+                    
+                    LLM 推理参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../Chap4-InferAndOpt/openai-o1-rel.html">
+            
+                <a href="../Chap4-InferAndOpt/openai-o1-rel.html">
+            
+                    
+                    OpenAI O1 相关进展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" >
+            
+                <span>
+            
+                    
+                    推理加速
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" >
+            
+                <span>
+            
+                    
+                    多模态处理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.7.1" >
+            
+                <span>
+            
+                    
+                    图像-文本模型
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.2" >
+            
+                <span>
+            
+                    
+                    跨模态注意力机制
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" >
+            
+                <span>
+            
+                    
+                    内容与计算优化
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    应用方向
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    文本生成与摘要
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" >
+            
+                <span>
+            
+                    
+                    自然语言生成
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" >
+            
+                <span>
+            
+                    
+                    文本摘要
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    问答与对话技术
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" >
+            
+                <span>
+            
+                    
+                    Chatbot 技术
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" >
+            
+                <span>
+            
+                    
+                    问答系统与检索增强生成
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.2.1" data-path="rag_intro_luxiangdong.html">
+            
+                <a href="rag_intro_luxiangdong.html">
+            
+                    
+                    大模型主流应用RAG的介绍——从架构到技术细节
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2.2.2" data-path="rag_interview-ques_analytics.html">
+            
+                <a href="rag_interview-ques_analytics.html">
+            
+                    
+                    Top 20+ RAG Interview Questions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    代码生成与分析
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" >
+            
+                <span>
+            
+                    
+                    编程助手
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" >
+            
+                <span>
+            
+                    
+                    自动代码补全
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Top 20+ RAG Interview Questions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#top-20-rag-interview-questions"><b>1. </b>Top 20+ RAG Interview Questions</a></li><ul><li><span class="title-icon "></span><a href="#&#x6982;&#x8FF0;"><b>1.1. </b>&#x6982;&#x8FF0;</a></li><li><span class="title-icon "></span><a href="#rag-interview-questions-for-beginners"><b>1.2. </b>RAG interview Questions for Beginners</a></li><ul><li><span class="title-icon "></span><a href="#can-you-explain-the-basic-difference-between-rag-and-traditional-language-models"><b>1.2.1. </b>Can you explain the basic difference between RAG and traditional language models?</a></li><li><span class="title-icon "></span><a href="#what-are-some-common-applications-of-rag-in-ai"><b>1.2.2. </b>What are some common applications of RAG in AI?</a></li><li><span class="title-icon "></span><a href="#how-does-rag-improve-the-accuracy-of-responses-in-ai-models"><b>1.2.3. </b>How does RAG improve the accuracy of responses in AI models?</a></li><li><span class="title-icon "></span><a href="#what-is-the-significance-of-retrieval-models-in-rag"><b>1.2.4. </b>What is the significance of retrieval models in RAG?</a></li><li><span class="title-icon "></span><a href="#what-types-of-data-sources-are-typically-used-in-rag-systems"><b>1.2.5. </b>What types of data sources are typically used in RAG systems?</a></li><li><span class="title-icon "></span><a href="#how-does-rag-contribute-to-the-field-of-conversational-ai"><b>1.2.6. </b>How does RAG contribute to the field of conversational AI?</a></li><li><span class="title-icon "></span><a href="#what-is-the-role-of-the-retrieval-component-in-rag"><b>1.2.7. </b>What is the role of the retrieval component in RAG?</a></li></ul><li><span class="title-icon "></span><a href="#intermediate-level-rag-interview-questions"><b>1.3. </b>intermediate Level RAG interview Questions</a></li><ul><li><span class="title-icon "></span><a href="#how-does-rag-handle-bias-and-misinformation"><b>1.3.1. </b>How does RAG handle bias and misinformation?</a></li><li><span class="title-icon "></span><a href="#what-are-the-benefits-of-using-rag-over-other-nlp-techniques"><b>1.3.2. </b>What are the benefits of using RAG over other NLP techniques?</a></li><li><span class="title-icon "></span><a href="#can-you-discuss-a-scenario-where-rag-would-be-particularly-useful"><b>1.3.3. </b>Can you discuss a scenario where RAG would be particularly useful?</a></li><li><span class="title-icon "></span><a href="#how-does-rag-integrate-with-existing-machine-learning-pipelines"><b>1.3.4. </b>How does RAG integrate with existing machine learning pipelines?</a></li><li><span class="title-icon "></span><a href="#what-challenges-does-rag-solve-in-natural-language-processing"><b>1.3.5. </b>What challenges does RAG solve in natural language processing?</a></li><li><span class="title-icon "></span><a href="#how-does-rag-ensure-the-retrieved-information-is-up-to-date"><b>1.3.6. </b>How does RAG ensure the retrieved information is up-to-date?</a></li><li><span class="title-icon "></span><a href="#what-is-the-impact-of-rag-on-the-efficiency-of-language-models"><b>1.3.7. </b>What is the impact of RAG on the efficiency of language models?</a></li></ul><li><span class="title-icon "></span><a href="#difficult-level-rag-interview-questions"><b>1.4. </b>Difficult Level RAG Interview Questions</a></li><ul><li><span class="title-icon "></span><a href="#how-does-rag-differ-from-parameter-efficient-fine-tuning-peft"><b>1.4.1. </b>How does RAG differ from Parameter-Efficient Fine-Tuning (PEFT)?</a></li><li><span class="title-icon "></span><a href="#in-what-ways-can-rag-enhance-human-ai-collaboration"><b>1.4.2. </b>In what ways can RAG enhance human-AI collaboration?</a></li><li><span class="title-icon "></span><a href="#can-you-explain-the-technical-architecture-of-a-rag-system"><b>1.4.3. </b>Can you explain the technical architecture of a RAG system?</a></li><li><span class="title-icon "></span><a href="#how-does-rag-maintain-context-in-a-conversation"><b>1.4.4. </b>How does RAG maintain context in a conversation?</a></li><li><span class="title-icon "></span><a href="#what-are-the-limitations-of-rag"><b>1.4.5. </b>What are the limitations of RAG?</a></li><li><span class="title-icon "></span><a href="#how-does-rag-handle-complex-queries-that-require-multi-hop-reasoning"><b>1.4.6. </b>How does RAG handle complex queries that require multi-hop reasoning?</a></li><li><span class="title-icon "></span><a href="#can-you-discuss-the-role-of-knowledge-graphs-in-rag"><b>1.4.7. </b>Can you discuss the role of knowledge graphs in RAG?</a></li><li><span class="title-icon "></span><a href="#what-are-the-ethical-considerations-when-implementing-rag-systems"><b>1.4.8. </b>What are the ethical considerations when implementing RAG systems?</a></li></ul></ul></ul></div><a href="#top-20-rag-interview-questions" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="top-20-rag-interview-questions"><a name="top-20-rag-interview-questions" class="anchor-navigation-ex-anchor" href="#top-20-rag-interview-questions"><i class="fa fa-link" aria-hidden="true"></i></a>1. Top 20+ RAG Interview Questions</h1>
+<blockquote>
+<p><a href="https://arc.net/l/quote/geclhjbu" target="_blank">Top 20+ RAG Interview Questions</a></p>
+</blockquote>
+<h2 id="&#x6982;&#x8FF0;"><a name="&#x6982;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#&#x6982;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x6982;&#x8FF0;</h2>
+<ul>
+<li>&#x57FA;&#x672C;&#x4E86;&#x89E3; RAG &#x5982;&#x4F55;&#x5C06;&#x57FA;&#x4E8E;&#x68C0;&#x7D22;&#x7684;&#x65B9;&#x6CD5;&#x4E0E;&#x751F;&#x6210;&#x6A21;&#x578B;&#x76F8;&#x7ED3;&#x5408;&#xFF0C;&#x4EE5;&#x589E;&#x5F3A; NLP &#x4EFB;&#x52A1;&#x5E76;&#x63D0;&#x4F9B;&#x66F4;&#x51C6;&#x786E;&#x3001;&#x8FDE;&#x8D2F;&#x4E14;&#x4E0A;&#x4E0B;&#x6587;&#x76F8;&#x5173;&#x7684;&#x8F93;&#x51FA;&#xFF1B;</li>
+<li>&#x63A2;&#x7D22; RAG &#x7684;&#x591A;&#x6837;&#x5316;&#x5E94;&#x7528;&#xFF0C;&#x5305;&#x62EC;&#x5176;&#x5728;&#x95EE;&#x7B54;&#x7CFB;&#x7EDF;&#x3001;&#x5BF9;&#x8BDD;&#x4EE3;&#x7406;&#x3001;&#x4FE1;&#x606F;&#x68C0;&#x7D22;&#x548C;&#x5185;&#x5BB9;&#x751F;&#x6210;&#x4E2D;&#x7684;&#x4F7F;&#x7528;&#x3002;</li>
+<li>&#x4E86;&#x89E3; RAG &#x7684;&#x4E24;&#x6B65;&#x6D41;&#x7A0B;&#x5982;&#x4F55;&#x63D0;&#x9AD8;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x6A21;&#x578B;&#x7684;&#x51C6;&#x786E;&#x6027;&#x3001;&#x4E0A;&#x4E0B;&#x6587;&#x611F;&#x77E5;&#x548C;&#x7075;&#x6D3B;&#x6027;&#xFF0C;&#x53CA;&#x5176;&#x5728;&#x51CF;&#x5C11;&#x504F;&#x89C1;&#x548C;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x65B9;&#x9762;&#x7684;&#x4F5C;&#x7528;&#x3002;</li>
+<li>&#x6DF1;&#x5165;&#x7814;&#x7A76; RAG &#x7684;&#x6280;&#x672F;&#x67B6;&#x6784;&#x3001;&#x68C0;&#x7D22;&#x7EC4;&#x4EF6;&#x7684;&#x4F5C;&#x7528;&#x3001;RAG &#x5982;&#x4F55;&#x5904;&#x7406;&#x590D;&#x6742;&#x67E5;&#x8BE2;&#x548C;&#x591A;&#x8DF3;&#x63A8;&#x7406;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x5982;&#x4F55;&#x4E0E;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x7BA1;&#x9053;&#x96C6;&#x6210;&#x4EE5;&#x8FDB;&#x884C;&#x5B9E;&#x9645;&#x5B9E;&#x73B0;&#x3002;</li>
+</ul>
+<h2 id="rag-interview-questions-for-beginners"><a name="rag-interview-questions-for-beginners" class="anchor-navigation-ex-anchor" href="#rag-interview-questions-for-beginners"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. RAG interview Questions for Beginners</h2>
+<h3 id="can-you-explain-the-basic-difference-between-rag-and-traditional-language-models"><a name="can-you-explain-the-basic-difference-between-rag-and-traditional-language-models" class="anchor-navigation-ex-anchor" href="#can-you-explain-the-basic-difference-between-rag-and-traditional-language-models"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. Can you explain the basic difference between RAG and traditional language models?</h3>
+<p>&#x4F20;&#x7EDF;&#x8BED;&#x8A00;&#x6A21;&#x578B;&#x4ECE;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x4E2D;&#x5B66;&#x5230;&#x7684;&#x6A21;&#x5F0F;&#x548C;&#x7ED3;&#x6784;&#x751F;&#x6210;&#x6587;&#x672C;&#xFF0C;&#x65E0;&#x6CD5;&#x4ECE;&#x5916;&#x90E8;&#x6765;&#x6E90;&#x68C0;&#x7D22;&#x7279;&#x5B9A;&#x4FE1;&#x606F;&#xFF0C;&#x4F1A;&#x6839;&#x636E;&#x6536;&#x5230;&#x7684;&#x8F93;&#x5165;&#x751F;&#x6210;&#x54CD;&#x5E94;&#x3002;</p>
+<p>&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;RAG &#x5305;&#x542B;&#x4E00;&#x4E2A;&#x68C0;&#x7D22;&#x7EC4;&#x4EF6;&#x3002;
+&#x5B83;&#x9996;&#x5148;&#x4ECE;&#x6587;&#x6863;&#x5E93;&#x4E2D;&#x641C;&#x7D22;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x7136;&#x540E;&#x751F;&#x6210;&#x54CD;&#x5E94;&#x3002;
+&#x8FD9;&#x4F7F;&#x5F97; RAG &#x80FD;&#x591F;&#x8BBF;&#x95EE;&#x548C;&#x5229;&#x7528;&#x5916;&#x90E8;&#x77E5;&#x8BC6;&#x3002;
+&#x4ECE;&#x800C;&#x4F7F;&#x5176;&#x6BD4;&#x4F20;&#x7EDF;&#x8BED;&#x8A00;&#x6A21;&#x578B;&#x66F4;&#x5177;&#x4E0A;&#x4E0B;&#x6587;&#x610F;&#x8BC6;&#xFF0C;&#x5E76;&#x4E14;&#x80FD;&#x591F;&#x63D0;&#x4F9B;&#x66F4;&#x51C6;&#x786E;&#x3001;&#x4FE1;&#x606F;&#x66F4;&#x4E30;&#x5BCC;&#x7684;&#x54CD;&#x5E94;&#x3002;</p>
+<h3 id="what-are-some-common-applications-of-rag-in-ai"><a name="what-are-some-common-applications-of-rag-in-ai" class="anchor-navigation-ex-anchor" href="#what-are-some-common-applications-of-rag-in-ai"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. What are some common applications of RAG in AI?</h3>
+<p>RAG &#x5728;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x7684;&#x4E0D;&#x540C;&#x9886;&#x57DF;&#x6709;&#x591A;&#x79CD;&#x5E94;&#x7528;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li>&#x95EE;&#x7B54;&#x7CFB;&#x7EDF;&#xFF1A;RAG &#x53EF;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x7CFB;&#x7EDF;&#xFF0C;&#x5728;&#x4ECE;&#x5927;&#x91CF;&#x6570;&#x636E;&#x96C6;&#x6216;&#x4E92;&#x8054;&#x7F51;&#x6536;&#x96C6;&#x76F8;&#x5173;&#x4E8B;&#x5B9E;&#x540E;&#xFF0C;&#x4E3A;&#x7528;&#x6237;&#x7684;&#x8BE2;&#x95EE;&#x63D0;&#x4F9B;&#x6E05;&#x6670;&#x3001;&#x51C6;&#x786E;&#x7684;&#x54CD;&#x5E94;&#xFF1B;</li>
+<li>&#x4FE1;&#x606F;&#x68C0;&#x7D22;&#xFF1A;RAG &#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x7279;&#x5B9A;&#x5173;&#x952E;&#x5B57;&#x6216;&#x67E5;&#x8BE2;&#x4ECE;&#x5E9E;&#x5927;&#x7684;&#x8BED;&#x6599;&#x5E93;&#x4E2D;&#x63D0;&#x53D6;&#x76F8;&#x5173;&#x6587;&#x6863;&#x6216;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x63D0;&#x9AD8;&#x4FE1;&#x606F;&#x68C0;&#x7D22;&#x7CFB;&#x7EDF;&#x7684;&#x6709;&#x6548;&#x6027;&#x548C;&#x7CBE;&#x786E;&#x5EA6;&#xFF1B;</li>
+<li>&#x4F1A;&#x8BDD;&#x4EE3;&#x7406;&#xFF1A;RAG &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BA9;&#x4F1A;&#x8BDD;&#x4EE3;&#x7406;&#x8BBF;&#x95EE;&#x5916;&#x90E8;&#x4FE1;&#x606F;&#x6E90;&#x6765;&#x63D0;&#x9AD8;&#x4F1A;&#x8BDD;&#x4EE3;&#x7406;&#x7684;&#x6027;&#x80FD;&#x3002;&#x8FD8;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x4ED6;&#x4EEC;&#x5728;&#x4EA4;&#x8C08;&#x65F6;&#x63D0;&#x4F9B;&#x66F4;&#x6709;&#x6D1E;&#x5BDF;&#x529B;&#x548C;&#x66F4;&#x9002;&#x5408;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x7B54;&#x590D;&#x3002;</li>
+<li>&#x5185;&#x5BB9;&#x751F;&#x6210;&#xFF1A;RAG &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6536;&#x96C6;&#x548C;&#x7EC4;&#x5408;&#x6765;&#x81EA;&#x4E0D;&#x540C;&#x6765;&#x6E90;&#x7684;&#x4FE1;&#x606F;&#x6765;&#x521B;&#x5EFA;&#x6458;&#x8981;&#x3001;&#x6587;&#x7AE0;&#x548C;&#x62A5;&#x544A;&#xFF0C;&#x4ECE;&#x800C;&#x751F;&#x6210;&#x903B;&#x8F91;&#x6027;&#x548C;&#x6559;&#x80B2;&#x6027;&#x6587;&#x6863;&#x3002;</li>
+</ul>
+<h3 id="how-does-rag-improve-the-accuracy-of-responses-in-ai-models"><a name="how-does-rag-improve-the-accuracy-of-responses-in-ai-models" class="anchor-navigation-ex-anchor" href="#how-does-rag-improve-the-accuracy-of-responses-in-ai-models"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. How does RAG improve the accuracy of responses in AI models?</h3>
+<p>RAG &#x901A;&#x8FC7;&#x5229;&#x7528;&#x5C06;&#x57FA;&#x4E8E;&#x68C0;&#x7D22;&#x7684;&#x65B9;&#x6CD5;&#x4E0E;&#x751F;&#x6210;&#x6A21;&#x578B;&#x76F8;&#x7ED3;&#x5408;&#x7684;&#x4E24;&#x6B65;&#x65B9;&#x6CD5;&#x6765;&#x63D0;&#x9AD8; AI &#x6A21;&#x578B;&#x4E2D;&#x54CD;&#x5E94;&#x7684;&#x51C6;&#x786E;&#x6027;&#x3002;
+&#x68C0;&#x7D22;&#x7EC4;&#x4EF6;&#x9996;&#x5148;&#x641C;&#x7D22;&#x5927;&#x91CF;&#x6587;&#x6863;&#xFF0C;&#x4EE5;&#x6839;&#x636E;&#x8F93;&#x5165;&#x67E5;&#x8BE2;&#x67E5;&#x627E;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;
+&#x7136;&#x540E;&#xFF0C;&#x751F;&#x6210;&#x6A21;&#x578B;&#x4F7F;&#x7528;&#x68C0;&#x7D22;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x6765;&#x751F;&#x6210;&#x54CD;&#x5E94;&#x3002;
+&#x901A;&#x8FC7;&#x6574;&#x5408;&#x68C0;&#x7D22;&#x5230;&#x7684;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x5916;&#x90E8;&#x77E5;&#x8BC6;&#xFF0C;RAG &#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x6BD4;&#x4EC5;&#x4F9D;&#x8D56;&#x4E8E;&#x4ECE;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x4E2D;&#x5B66;&#x4E60;&#x5230;&#x7684;&#x6A21;&#x5F0F;&#x7684;&#x4F20;&#x7EDF;&#x751F;&#x6210;&#x6A21;&#x578B;&#x66F4;&#x51C6;&#x786E;&#x4E14;&#x4E0E;&#x4E0A;&#x4E0B;&#x6587;&#x76F8;&#x5173;&#x7684;&#x54CD;&#x5E94;&#x3002;</p>
+<h3 id="what-is-the-significance-of-retrieval-models-in-rag"><a name="what-is-the-significance-of-retrieval-models-in-rag" class="anchor-navigation-ex-anchor" href="#what-is-the-significance-of-retrieval-models-in-rag"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.4. What is the significance of retrieval models in RAG?</h3>
+<p>RAG &#x4E2D;&#x7684;&#x68C0;&#x7D22;&#x6A21;&#x578B;&#x5728;&#x4ECE;&#x5927;&#x578B;&#x6570;&#x636E;&#x96C6;&#x6216;&#x6587;&#x6863;&#x8BED;&#x6599;&#x5E93;&#x4E2D;&#x8BBF;&#x95EE;&#x548C;&#x8BC6;&#x522B;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x65B9;&#x9762;&#x53D1;&#x6325;&#x7740;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x7684;&#x4F5C;&#x7528;&#x3002;
+&#x8FD9;&#x4E9B;&#x6A21;&#x578B;&#x8D1F;&#x8D23;&#x6839;&#x636E;&#x8F93;&#x5165;&#x67E5;&#x8BE2;&#x641C;&#x7D22;&#x53EF;&#x7528;&#x6570;&#x636E;&#x5E76;&#x68C0;&#x7D22;&#x76F8;&#x5173;&#x6587;&#x6863;&#x3002;
+&#x7136;&#x540E;&#xFF0C;&#x68C0;&#x7D22;&#x5230;&#x7684;&#x6587;&#x6863;&#x5C06;&#x4F5C;&#x4E3A;&#x751F;&#x6210;&#x6A21;&#x578B;&#x751F;&#x6210;&#x51C6;&#x786E;&#x4E14;&#x4FE1;&#x606F;&#x4E30;&#x5BCC;&#x7684;&#x54CD;&#x5E94;&#x7684;&#x57FA;&#x7840;&#x3002;
+&#x68C0;&#x7D22;&#x6A21;&#x578B;&#x7684;&#x91CD;&#x8981;&#x6027;&#x5728;&#x4E8E;&#x5B83;&#x4EEC;&#x63D0;&#x4F9B;&#x5BF9;&#x5916;&#x90E8;&#x77E5;&#x8BC6;&#x7684;&#x8BBF;&#x95EE;&#x7684;&#x80FD;&#x529B;&#x3002;
+&#x56E0;&#x6B64;&#xFF0C;&#x8FD9;&#x589E;&#x5F3A;&#x4E86; RAG &#x7CFB;&#x7EDF;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x611F;&#x77E5;&#x548C;&#x51C6;&#x786E;&#x6027;&#x3002;</p>
+<h3 id="what-types-of-data-sources-are-typically-used-in-rag-systems"><a name="what-types-of-data-sources-are-typically-used-in-rag-systems" class="anchor-navigation-ex-anchor" href="#what-types-of-data-sources-are-typically-used-in-rag-systems"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.5. What types of data sources are typically used in RAG systems?</h3>
+<p>&#x5728; RAG &#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5404;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x6E90;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li><strong>&#x6587;&#x6863;&#x8BED;&#x6599;&#x5E93;</strong>&#xFF1A;RAG &#x7CFB;&#x7EDF;&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x6587;&#x672C;&#x6587;&#x6863;&#x7684;&#x96C6;&#x5408;&#xFF08;&#x4F8B;&#x5982;&#x4E66;&#x7C4D;&#x3001;&#x6587;&#x7AE0;&#x548C;&#x7F51;&#x7AD9;&#xFF09;&#x4F5C;&#x4E3A;&#x6570;&#x636E;&#x6E90;&#x3002;&#x8FD9;&#x4E9B;&#x8BED;&#x6599;&#x5E93;&#x63D0;&#x4F9B;&#x4E86;&#x751F;&#x6210;&#x6A21;&#x578B;&#x53EF;&#x4EE5;&#x68C0;&#x7D22;&#x548C;&#x5229;&#x7528;&#x7684;&#x4E30;&#x5BCC;&#x4FE1;&#x606F;&#x6E90;&#x3002;</li>
+<li><strong>&#x77E5;&#x8BC6;&#x5E93;</strong>&#xFF1A;RAG &#x7CFB;&#x7EDF;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5305;&#x542B;&#x4E8B;&#x5B9E;&#x4FE1;&#x606F;&#x7684;&#x7ED3;&#x6784;&#x5316;&#x6570;&#x636E;&#x5E93;&#xFF08;&#x4F8B;&#x5982; Wiki &#x6216;&#x767E;&#x79D1;&#x5168;&#x4E66;&#xFF09;&#x4F5C;&#x4E3A;&#x6570;&#x636E;&#x6E90;&#x6765;&#x68C0;&#x7D22;&#x7279;&#x5B9A;&#x7684;&#x4E8B;&#x5B9E;&#x4FE1;&#x606F;&#x3002;</li>
+<li><strong>&#x7F51;&#x7EDC;&#x6765;&#x6E90;</strong>&#xFF1A;RAG &#x7CFB;&#x7EDF;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBF;&#x95EE;&#x5728;&#x7EBF;&#x6570;&#x636E;&#x5E93;&#x3001;&#x7F51;&#x7AD9;&#x6216;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x7ED3;&#x679C;&#x6765;&#x4ECE;&#x7F51;&#x7EDC;&#x68C0;&#x7D22;&#x4FE1;&#x606F;&#xFF0C;&#x4EE5;&#x6536;&#x96C6;&#x76F8;&#x5173;&#x6570;&#x636E;&#x4EE5;&#x751F;&#x6210;&#x54CD;&#x5E94;&#x3002;</li>
+</ul>
+<h3 id="how-does-rag-contribute-to-the-field-of-conversational-ai"><a name="how-does-rag-contribute-to-the-field-of-conversational-ai" class="anchor-navigation-ex-anchor" href="#how-does-rag-contribute-to-the-field-of-conversational-ai"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.6. How does RAG contribute to the field of conversational AI?</h3>
+<p>&#x901A;&#x8FC7;&#x5141;&#x8BB8;&#x4F1A;&#x8BDD;&#x4EE3;&#x7406;&#x8BBF;&#x95EE;&#x548C;&#x4F7F;&#x7528;&#x5916;&#x90E8;&#x77E5;&#x8BC6;&#x6E90;&#xFF0C;RAG &#x901A;&#x8FC7;&#x63D0;&#x9AD8;&#x4EE3;&#x7406;&#x5728;&#x4E0E;&#x4ED6;&#x4EBA;&#x4EA4;&#x4E92;&#x65F6;&#x751F;&#x6210;&#x5BCC;&#x6709;&#x6D1E;&#x5BDF;&#x529B;&#x4E14;&#x9002;&#x5408;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x56DE;&#x590D;&#x7684;&#x80FD;&#x529B;&#x6765;&#x63A8;&#x8FDB;&#x4F1A;&#x8BDD; AI&#x3002;
+&#x901A;&#x8FC7;&#x96C6;&#x6210;&#x751F;&#x6210;&#x6A21;&#x578B;&#x548C;&#x57FA;&#x4E8E;&#x68C0;&#x7D22;&#x7684;&#x6280;&#x672F;&#xFF0C;RAG &#x4F7F;&#x5BF9;&#x8BDD;&#x4EE3;&#x7406;&#x80FD;&#x591F;&#x66F4;&#x51C6;&#x786E;&#x5730;&#x7406;&#x89E3;&#x7528;&#x6237;&#x7684;&#x67E5;&#x8BE2;&#x5E76;&#x505A;&#x51FA;&#x53CD;&#x5E94;&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x66F4;&#x6709;&#x610F;&#x4E49;&#x3001;&#x66F4;&#x6709;&#x5438;&#x5F15;&#x529B;&#x7684;&#x4EA4;&#x6D41;&#x3002;</p>
+<h3 id="what-is-the-role-of-the-retrieval-component-in-rag"><a name="what-is-the-role-of-the-retrieval-component-in-rag" class="anchor-navigation-ex-anchor" href="#what-is-the-role-of-the-retrieval-component-in-rag"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.7. What is the role of the retrieval component in RAG?</h3>
+<p>&#x6839;&#x636E;&#x8F93;&#x5165;&#x95EE;&#x9898;&#xFF0C;RAG &#x7684;&#x68C0;&#x7D22;&#x7EC4;&#x4EF6;&#x641C;&#x7D22;&#x53EF;&#x7528;&#x7684;&#x6570;&#x636E;&#x6E90;&#xFF08;&#x4F8B;&#x5982;&#x6587;&#x6863;&#x8BED;&#x6599;&#x5E93;&#x6216;&#x77E5;&#x8BC6;&#x5E93;&#xFF09;&#xFF0C;&#x4EE5;&#x8BC6;&#x522B;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;
+&#x8BE5;&#x7EC4;&#x4EF6;&#x4F7F;&#x7528;&#x5404;&#x79CD;&#x68C0;&#x7D22;&#x65B9;&#x6CD5;&#xFF08;&#x5305;&#x62EC;&#x5173;&#x952E;&#x5B57;&#x5339;&#x914D;&#x548C;&#x8BED;&#x4E49;&#x641C;&#x7D22;&#xFF09;&#x67E5;&#x627E;&#x548C;&#x68C0;&#x7D22;&#x5305;&#x542B;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x7684;&#x6587;&#x6863;&#x6216;&#x6570;&#x636E;&#x70B9;&#x3002;
+&#x751F;&#x6210;&#x6A21;&#x578B;&#x63A5;&#x6536;&#x5E76;&#x4F7F;&#x7528;&#x68C0;&#x7D22;&#x5230;&#x7684;&#x76F8;&#x5173;&#x6570;&#x636E;&#x6765;&#x751F;&#x6210;&#x54CD;&#x5E94;&#x3002;
+&#x68C0;&#x7D22;&#x7EC4;&#x4EF6;&#x4F7F;&#x5916;&#x90E8;&#x77E5;&#x8BC6;&#x66F4;&#x6613;&#x4E8E;&#x8BBF;&#x95EE;&#xFF0C;&#x4ECE;&#x800C;&#x663E;&#x8457;&#x63D0;&#x9AD8;&#x4E86; RAG &#x7CFB;&#x7EDF;&#x7684;&#x51C6;&#x786E;&#x6027;&#x548C;&#x4E0A;&#x4E0B;&#x6587;&#x611F;&#x77E5;&#x80FD;&#x529B;&#x3002;</p>
+<h2 id="intermediate-level-rag-interview-questions"><a name="intermediate-level-rag-interview-questions" class="anchor-navigation-ex-anchor" href="#intermediate-level-rag-interview-questions"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. intermediate Level RAG interview Questions</h2>
+<h3 id="how-does-rag-handle-bias-and-misinformation"><a name="how-does-rag-handle-bias-and-misinformation" class="anchor-navigation-ex-anchor" href="#how-does-rag-handle-bias-and-misinformation"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. How does RAG handle bias and misinformation?</h3>
+<p>RAG &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5229;&#x7528;&#x6D89;&#x53CA;&#x57FA;&#x4E8E;&#x68C0;&#x7D22;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x751F;&#x6210;&#x6A21;&#x578B;&#x7684;&#x4E24;&#x6B65;&#x65B9;&#x6CD5;&#x6765;&#x5E2E;&#x52A9;&#x51CF;&#x5C11;&#x504F;&#x89C1;&#x548C;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x3002;
+&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x68C0;&#x7D22;&#x7EC4;&#x4EF6;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x4ECE;&#x6587;&#x6863;&#x8BED;&#x6599;&#x5E93;&#x6216;&#x77E5;&#x8BC6;&#x5E93;&#x68C0;&#x7D22;&#x4FE1;&#x606F;&#x65F6;<strong>&#x4F18;&#x5148;&#x8003;&#x8651;&#x53EF;&#x4FE1;&#x548C;&#x6743;&#x5A01;&#x7684;&#x6765;&#x6E90;</strong>&#x3002;
+&#x6B64;&#x5916;&#xFF0C;&#x53EF;&#x4EE5;&#x8BAD;&#x7EC3;&#x751F;&#x6210;&#x6A21;&#x578B;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x751F;&#x6210;&#x54CD;&#x5E94;&#x4E4B;&#x524D;&#x4EA4;&#x53C9;&#x5F15;&#x7528;&#x548C;&#x9A8C;&#x8BC1;&#x68C0;&#x7D22;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x3002;
+&#x4ECE;&#x800C;&#x51CF;&#x5C11;&#x6709;&#x504F;&#x89C1;&#x6216;&#x4E0D;&#x51C6;&#x786E;&#x7684;&#x4FE1;&#x606F;&#x4F20;&#x64AD;&#x3002;
+RAG &#x65E8;&#x5728;&#x901A;&#x8FC7;&#x6574;&#x5408;&#x5916;&#x90E8;&#x77E5;&#x8BC6;&#x6E90;&#x548C;&#x9A8C;&#x8BC1;&#x673A;&#x5236;&#x6765;&#x63D0;&#x4F9B;&#x66F4;&#x53EF;&#x9760;&#x3001;&#x66F4;&#x51C6;&#x786E;&#x7684;&#x54CD;&#x5E94;&#x3002;</p>
+<h3 id="what-are-the-benefits-of-using-rag-over-other-nlp-techniques"><a name="what-are-the-benefits-of-using-rag-over-other-nlp-techniques" class="anchor-navigation-ex-anchor" href="#what-are-the-benefits-of-using-rag-over-other-nlp-techniques"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. What are the benefits of using RAG over other NLP techniques?</h3>
+<p>&#x4E0E;&#x5176;&#x4ED6; NLP &#x6280;&#x672F;&#x76F8;&#x6BD4;&#xFF0C;&#x4F7F;&#x7528; RAG &#x7684;&#x4E00;&#x4E9B;&#x4E3B;&#x8981;&#x4F18;&#x52BF;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li><strong>&#x63D0;&#x9AD8;&#x51C6;&#x786E;&#x6027;</strong>&#xFF1A;&#x5229;&#x7528;&#x5916;&#x90E8;&#x77E5;&#x8BC6;&#x6E90;&#xFF0C;RAG &#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x6BD4;&#x6807;&#x51C6;&#x8BED;&#x8A00;&#x6A21;&#x578B;&#x751F;&#x6210;&#x66F4;&#x51C6;&#x786E;&#x3001;&#x66F4;&#x9002;&#x5408;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x56DE;&#x590D;&#x3002;</li>
+<li><strong>&#x4E0A;&#x4E0B;&#x6587;&#x611F;&#x77E5;</strong>&#xFF1A;RAG &#x7684;&#x68C0;&#x7D22;&#x7EC4;&#x4EF6;&#x4F7F;&#x5176;&#x80FD;&#x591F;&#x7406;&#x89E3;&#x548C;&#x8003;&#x8651;&#x67E5;&#x8BE2;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x4ECE;&#x800C;&#x751F;&#x6210;&#x66F4;&#x6709;&#x610F;&#x4E49;&#x3001;&#x66F4;&#x6709;&#x8BF4;&#x670D;&#x529B;&#x7684;&#x7B54;&#x6848;&#x3002;</li>
+<li><strong>&#x7075;&#x6D3B;&#x6027;</strong>&#xFF1A;RAG &#x662F;&#x9002;&#x7528;&#x4E8E;&#x5404;&#x79CD; NLP &#x5E94;&#x7528;&#x7684;&#x7075;&#x6D3B;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x6E90;&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x7684;&#x4EFB;&#x52A1;&#x548C;&#x9886;&#x57DF;&#x8FDB;&#x884C;&#x5B9A;&#x5236;&#x3002;</li>
+<li><strong>&#x51CF;&#x5C11;&#x504F;&#x89C1;&#x548C;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</strong>&#xFF1A;RAG &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F18;&#x5148;&#x8003;&#x8651;&#x53EF;&#x9760;&#x6765;&#x6E90;&#x5E76;&#x786E;&#x8BA4;&#x68C0;&#x7D22;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x6765;&#x5E2E;&#x52A9;&#x51CF;&#x5C11;&#x504F;&#x89C1;&#x548C;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x3002;</li>
+</ul>
+<h3 id="can-you-discuss-a-scenario-where-rag-would-be-particularly-useful"><a name="can-you-discuss-a-scenario-where-rag-would-be-particularly-useful" class="anchor-navigation-ex-anchor" href="#can-you-discuss-a-scenario-where-rag-would-be-particularly-useful"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. Can you discuss a scenario where RAG would be particularly useful?</h3>
+<p>RAG &#x5728;&#x5F00;&#x53D1;&#x533B;&#x7597;&#x4FDD;&#x5065;&#x804A;&#x5929;&#x673A;&#x5668;&#x4EBA;&#x65B9;&#x9762;&#x53EF;&#x80FD;&#x7279;&#x522B;&#x6709;&#x5E2E;&#x52A9;&#xFF0C;&#x8BE5;&#x673A;&#x5668;&#x4EBA;&#x53EF;&#x4EE5;&#x4E3A;&#x6D88;&#x8D39;&#x8005;&#x63D0;&#x4F9B;&#x51C6;&#x786E;&#x4E14;&#x5B9A;&#x5236;&#x7684;&#x533B;&#x7597;&#x4FE1;&#x606F;&#x3002;
+&#x57FA;&#x4E8E;&#x7528;&#x6237;&#x5BF9;&#x75C7;&#x72B6;&#x3001;&#x6CBB;&#x7597;&#x6216;&#x75BE;&#x75C5;&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x8BE5;&#x573A;&#x666F;&#x4E2D;&#x7684;&#x68C0;&#x7D22;&#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x641C;&#x7D22;&#x5B66;&#x672F;&#x671F;&#x520A;&#x3001;&#x533B;&#x5B66;&#x6587;&#x732E;&#x548C;&#x53EF;&#x9760;&#x7684;&#x533B;&#x7597;&#x4FDD;&#x5065;&#x7F51;&#x7AD9;&#x7684;&#x56FE;&#x4E66;&#x9986;&#x4EE5;&#x83B7;&#x53D6;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;
+&#x4E4B;&#x540E;&#xFF0C;&#x751F;&#x6210;&#x6A21;&#x578B;&#x5C06;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x77E5;&#x8BC6;&#x6765;&#x63D0;&#x4F9B;&#x4E0E;&#x7528;&#x6237;&#x4E0A;&#x4E0B;&#x6587;&#x76F8;&#x5173;&#x4E14;&#x6709;&#x6307;&#x5BFC;&#x610F;&#x4E49;&#x7684;&#x56DE;&#x590D;&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x5C06;&#x5916;&#x90E8;&#x77E5;&#x8BC6;&#x6E90;&#x4E0E;&#x751F;&#x6210;&#x529F;&#x80FD;&#x76F8;&#x96C6;&#x6210;&#xFF0C;RAG &#x6709;&#x6F5C;&#x529B;&#x63D0;&#x9AD8;&#x533B;&#x7597;&#x4FDD;&#x5065;&#x804A;&#x5929;&#x673A;&#x5668;&#x4EBA;&#x7684;&#x7CBE;&#x786E;&#x5EA6;&#x548C;&#x53EF;&#x9760;&#x6027;&#x3002;
+&#x8FD9;&#x5C06;&#x4FDD;&#x8BC1;&#x7528;&#x6237;&#x83B7;&#x5F97;&#x53EF;&#x9760;&#x4E14;&#x6700;&#x65B0;&#x7684;&#x533B;&#x7597;&#x4FE1;&#x606F;&#x3002;
+&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x589E;&#x5F3A;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#xFF0C;&#x4E0E;&#x7528;&#x6237;&#x5EFA;&#x7ACB;&#x4FE1;&#x4EFB;&#xFF0C;&#x5E76;&#x4E3A;&#x8BBF;&#x95EE;&#x53EF;&#x9760;&#x7684;&#x533B;&#x7597;&#x4FDD;&#x5065;&#x4FE1;&#x606F;&#x63D0;&#x4F9B;&#x5B9D;&#x8D35;&#x7684;&#x652F;&#x6301;&#x3002;</p>
+<h3 id="how-does-rag-integrate-with-existing-machine-learning-pipelines"><a name="how-does-rag-integrate-with-existing-machine-learning-pipelines" class="anchor-navigation-ex-anchor" href="#how-does-rag-integrate-with-existing-machine-learning-pipelines"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.4. How does RAG integrate with existing machine learning pipelines?</h3>
+<p>&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x5C06; RAG &#x4F5C;&#x4E3A;&#x8D1F;&#x8D23;&#x5904;&#x7406;&#x81EA;&#x7136;&#x8BED;&#x8A00;&#x5904;&#x7406;&#x4EFB;&#x52A1;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x5C06;&#x5176;&#x96C6;&#x6210;&#x5230;&#x73B0;&#x6709;&#x7684;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x7BA1;&#x9053;&#x4E2D;&#x3002;
+&#x901A;&#x5E38;&#xFF0C;&#x4ED6;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06; RAG &#x7684;&#x68C0;&#x7D22;&#x7EC4;&#x4EF6;&#x8FDE;&#x63A5;&#x5230;&#x6570;&#x636E;&#x5E93;&#x6216;&#x6587;&#x6863;&#x8BED;&#x6599;&#x5E93;&#xFF0C;&#x5728;&#x5176;&#x4E2D;&#x6839;&#x636E;&#x8F93;&#x5165;&#x67E5;&#x8BE2;&#x641C;&#x7D22;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;
+&#x968F;&#x540E;&#xFF0C;&#x751F;&#x6210;&#x6A21;&#x578B;&#x5904;&#x7406;&#x68C0;&#x7D22;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x4EE5;&#x751F;&#x6210;&#x54CD;&#x5E94;&#x3002;
+&#x8FD9;&#x79CD;&#x65E0;&#x7F1D;&#x96C6;&#x6210;&#x4F7F; RAG &#x80FD;&#x591F;&#x5229;&#x7528;&#x73B0;&#x6709;&#x7684;&#x6570;&#x636E;&#x6E90;&#x548C;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#xFF0C;&#x4ECE;&#x800C;&#x66F4;&#x8F7B;&#x677E;&#x5730;&#x878D;&#x5165;&#x5404;&#x79CD;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x7BA1;&#x9053;&#x548C;&#x7CFB;&#x7EDF;&#x3002;</p>
+<h3 id="what-challenges-does-rag-solve-in-natural-language-processing"><a name="what-challenges-does-rag-solve-in-natural-language-processing" class="anchor-navigation-ex-anchor" href="#what-challenges-does-rag-solve-in-natural-language-processing"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.5. What challenges does RAG solve in natural language processing?</h3>
+<p>RAG &#x89E3;&#x51B3;&#x4E86;&#x81EA;&#x7136;&#x8BED;&#x8A00;&#x5904;&#x7406;&#x4E2D;&#x7684;&#x51E0;&#x4E2A;&#x6311;&#x6218;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li><strong>&#x4E0A;&#x4E0B;&#x6587;&#x7406;&#x89E3;</strong>&#xFF1A;RAG &#x7684;&#x68C0;&#x7D22;&#x7EC4;&#x4EF6;&#x4F7F;&#x5176;&#x80FD;&#x591F;&#x7406;&#x89E3;&#x548C;&#x8003;&#x8651;&#x67E5;&#x8BE2;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x4ECE;&#x800C;&#x6BD4;&#x4F20;&#x7EDF;&#x8BED;&#x8A00;&#x6A21;&#x578B;&#x4EA7;&#x751F;&#x66F4;&#x8FDE;&#x8D2F;&#x3001;&#x66F4;&#x6709;&#x610F;&#x4E49;&#x7684;&#x54CD;&#x5E94;&#x3002;</li>
+<li><strong>&#x4FE1;&#x606F;&#x68C0;&#x7D22;</strong>&#xFF1A;&#x901A;&#x8FC7;&#x5229;&#x7528;&#x57FA;&#x4E8E;&#x68C0;&#x7D22;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;RAG &#x53EF;&#x4EE5;&#x6709;&#x6548;&#x5730;&#x641C;&#x7D22;&#x5927;&#x578B;&#x6570;&#x636E;&#x96C6;&#x6216;&#x6587;&#x6863;&#x8BED;&#x6599;&#x5E93;&#x4EE5;&#x68C0;&#x7D22;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x9AD8;&#x751F;&#x6210;&#x5185;&#x5BB9;&#x7684;&#x53EF;&#x9760;&#x6027;&#x3002;</li>
+<li><strong>&#x504F;&#x89C1;&#x548C;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</strong>&#xFF1A;&#x5982;&#x524D;&#x6240;&#x8FF0;&#xFF0C;RAG &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F18;&#x5148;&#x8003;&#x8651;&#x53EF;&#x9760;&#x6765;&#x6E90;&#x5E76;&#x9A8C;&#x8BC1;&#x68C0;&#x7D22;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x6765;&#x5E2E;&#x52A9;&#x51CF;&#x5C11;&#x504F;&#x89C1;&#x548C;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x9AD8;&#x751F;&#x6210;&#x5185;&#x5BB9;&#x7684;&#x53EF;&#x9760;&#x6027;&#x3002;</li>
+<li><strong>&#x4E2A;&#x6027;&#x5316;</strong>&#xFF1A;RAG &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x68C0;&#x7D22;&#x548C;&#x5229;&#x7528;&#x4E4B;&#x524D;&#x7684;&#x4EA4;&#x4E92;&#x6216;&#x7528;&#x6237;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x6839;&#x636E;&#x7528;&#x6237;&#x504F;&#x597D;&#x6216;&#x5386;&#x53F2;&#x4EA4;&#x4E92;&#x6765;&#x8C03;&#x6574;&#x54CD;&#x5E94;&#x7684;&#x4E2A;&#x6027;&#x5316;&#x3002;</li>
+</ul>
+<h3 id="how-does-rag-ensure-the-retrieved-information-is-up-to-date"><a name="how-does-rag-ensure-the-retrieved-information-is-up-to-date" class="anchor-navigation-ex-anchor" href="#how-does-rag-ensure-the-retrieved-information-is-up-to-date"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.6. How does RAG ensure the retrieved information is up-to-date?</h3>
+<p>&#x4E3A;&#x4E86;&#x786E;&#x4FDD;&#x68C0;&#x7D22;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x662F;&#x6700;&#x65B0;&#x7684;&#xFF0C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x8BBE;&#x8BA1; RAG&#xFF0C;&#x4F7F;&#x7528;&#x6765;&#x81EA;&#x4FE1;&#x8A89;&#x826F;&#x597D;&#x4E14;&#x53EF;&#x9760;&#x7684;&#x6765;&#x6E90;&#x7684;&#x6700;&#x65B0;&#x4FE1;&#x606F;&#x5B9A;&#x671F;&#x66F4;&#x65B0;&#x5176;&#x6570;&#x636E;&#x5E93;&#x6216;&#x6587;&#x6863;&#x8BED;&#x6599;&#x5E93;&#x3002;
+&#x4ED6;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x68C0;&#x7D22;&#x7EC4;&#x4EF6;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x641C;&#x7D22;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x65F6;&#x4F18;&#x5148;&#x8003;&#x8651;&#x6700;&#x8FD1;&#x7684;&#x51FA;&#x7248;&#x7269;&#x6216;&#x66F4;&#x65B0;&#x3002;
+&#x5B9E;&#x65BD;&#x6301;&#x7EED;&#x76D1;&#x63A7;&#x548C;&#x66F4;&#x65B0;&#x673A;&#x5236;&#x4F7F;&#x4ED6;&#x4EEC;&#x80FD;&#x591F;&#x5237;&#x65B0;&#x6570;&#x636E;&#x6E90;&#x5E76;&#x786E;&#x4FDD;&#x68C0;&#x7D22;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x4FDD;&#x6301;&#x6700;&#x65B0;&#x4E14;&#x76F8;&#x5173;&#x3002;</p>
+<h3 id="what-is-the-impact-of-rag-on-the-efficiency-of-language-models"><a name="what-is-the-impact-of-rag-on-the-efficiency-of-language-models" class="anchor-navigation-ex-anchor" href="#what-is-the-impact-of-rag-on-the-efficiency-of-language-models"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.7. What is the impact of RAG on the efficiency of language models?</h3>
+<p>RAG &#x53EF;&#x4EE5;&#x5229;&#x7528;&#x57FA;&#x4E8E;&#x68C0;&#x7D22;&#x7684;&#x65B9;&#x6CD5;&#x7F29;&#x5C0F;&#x641C;&#x7D22;&#x7A7A;&#x95F4;&#x5E76;&#x5173;&#x6CE8;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;&#x800C;&#x663E;&#x8457;&#x63D0;&#x9AD8;&#x8BED;&#x8A00;&#x6A21;&#x578B;&#x7684;&#x6548;&#x7387;&#x3002;
+RAG &#x901A;&#x8FC7;&#x5229;&#x7528;&#x68C0;&#x7D22;&#x5668;&#x7EC4;&#x4EF6;&#x4ECE;&#x5927;&#x578B;&#x6587;&#x6863;&#x8BED;&#x6599;&#x5E93;&#x6216;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x8BC6;&#x522B;&#x548C;&#x68C0;&#x7D22;&#x76F8;&#x5173;&#x6570;&#x636E;&#xFF0C;&#x51CF;&#x5C11;&#x4E86;&#x751F;&#x6210;&#x6A21;&#x578B;&#x7684;&#x8BA1;&#x7B97;&#x8D1F;&#x62C5;&#x3002;
+&#x8FD9;&#x79CD;&#x6709;&#x9488;&#x5BF9;&#x6027;&#x7684;&#x65B9;&#x6CD5;&#x4F7F;&#x751F;&#x6210;&#x6A21;&#x578B;&#x80FD;&#x591F;&#x66F4;&#x6709;&#x6548;&#x5730;&#x5904;&#x7406;&#x548C;&#x751F;&#x6210;&#x54CD;&#x5E94;&#xFF0C;&#x4ECE;&#x800C;&#x7F29;&#x77ED;&#x63A8;&#x7406;&#x65F6;&#x95F4;&#x5E76;&#x964D;&#x4F4E;&#x8BA1;&#x7B97;&#x6210;&#x672C;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x5C06;&#x57FA;&#x4E8E;&#x68C0;&#x7D22;&#x7684;&#x6280;&#x672F;&#x4E0E; RAG &#x4E2D;&#x7684;&#x751F;&#x6210;&#x6A21;&#x578B;&#x76F8;&#x7ED3;&#x5408;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x66F4;&#x7CBE;&#x786E;&#x3001;&#x66F4;&#x9002;&#x5408;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x56DE;&#x590D;&#xFF0C;&#x4ECE;&#x800C;&#x51CF;&#x5C11;&#x5BF9;&#x5BC6;&#x96C6;&#x8BED;&#x8A00;&#x6A21;&#x578B;&#x4F18;&#x5316;&#x548C;&#x5FAE;&#x8C03;&#x7684;&#x9700;&#x6C42;&#x3002;
+RAG &#x901A;&#x8FC7;&#x7B80;&#x5316;&#x68C0;&#x7D22;&#x548C;&#x751F;&#x6210;&#x8FC7;&#x7A0B;&#x6765;&#x63D0;&#x9AD8;&#x8BED;&#x8A00;&#x6A21;&#x578B;&#x7684;&#x6574;&#x4F53;&#x6027;&#x80FD;&#xFF0C;&#x4F7F;&#x5B83;&#x4EEC;&#x66F4;&#x5177;&#x53EF;&#x6269;&#x5C55;&#x6027;&#xFF0C;&#x5E76;&#x4E14;&#x5BF9;&#x4E8E;&#x4E00;&#x7CFB;&#x5217;&#x81EA;&#x7136;&#x8BED;&#x8A00;&#x5904;&#x7406;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x66F4;&#x6709;&#x7528;&#x3002;</p>
+<h2 id="difficult-level-rag-interview-questions"><a name="difficult-level-rag-interview-questions" class="anchor-navigation-ex-anchor" href="#difficult-level-rag-interview-questions"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Difficult Level RAG Interview Questions</h2>
+<h3 id="how-does-rag-differ-from-parameter-efficient-fine-tuning-peft"><a name="how-does-rag-differ-from-parameter-efficient-fine-tuning-peft" class="anchor-navigation-ex-anchor" href="#how-does-rag-differ-from-parameter-efficient-fine-tuning-peft"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. How does RAG differ from Parameter-Efficient Fine-Tuning (PEFT)?</h3>
+<p>RAG &#x548C; PEFT &#x662F;&#x4E24;&#x79CD;&#x4E0D;&#x540C;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li><strong>RAG</strong>&#xFF1A;&#x901A;&#x8FC7;&#x5C06;&#x751F;&#x6210;&#x6A21;&#x578B;&#x4E0E;&#x57FA;&#x4E8E;&#x68C0;&#x7D22;&#x7684;&#x6280;&#x672F;&#x878D;&#x5408;&#x6765;&#x6539;&#x5584;&#x81EA;&#x7136;&#x8BED;&#x8A00;&#x5904;&#x7406;&#x95EE;&#x9898;&#x3002;&#x5B83;&#x4F7F;&#x7528;&#x68C0;&#x7D22;&#x5668;&#x7EC4;&#x4EF6;&#x4ECE;&#x6570;&#x636E;&#x96C6;&#x6587;&#x4EF6;&#x6216;&#x6587;&#x6863;&#x8BED;&#x6599;&#x5E93;&#x83B7;&#x53D6;&#x76F8;&#x5173;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5176;&#x5E94;&#x7528;&#x5230;&#x751F;&#x6210;&#x6A21;&#x578B;&#x4EE5;&#x751F;&#x6210;&#x56DE;&#x590D;&#x3002;</li>
+<li><strong>PEFT&#xFF08;Parameter-Efficient Fine-Tuning&#xFF09;</strong>&#xFF1A;&#x65E8;&#x5728;&#x901A;&#x8FC7;&#x4F18;&#x5316;&#x548C;&#x5FAE;&#x8C03;&#x9884;&#x8BAD;&#x7EC3;&#x8BED;&#x8A00;&#x6A21;&#x578B;&#x6765;&#x51CF;&#x5C11;&#x6240;&#x9700;&#x7684;&#x8BA1;&#x7B97;&#x8D44;&#x6E90;&#x548C;&#x53C2;&#x6570;&#xFF0C;&#x4EE5;&#x63D0;&#x9AD8;&#x5176;&#x5728;&#x7279;&#x5B9A;&#x4EFB;&#x52A1;&#x4E0A;&#x7684;&#x6027;&#x80FD;&#x3002;</li>
+</ul>
+<h3 id="in-what-ways-can-rag-enhance-human-ai-collaboration"><a name="in-what-ways-can-rag-enhance-human-ai-collaboration" class="anchor-navigation-ex-anchor" href="#in-what-ways-can-rag-enhance-human-ai-collaboration"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. In what ways can RAG enhance human-AI collaboration?</h3>
+<p>RAG &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x589E;&#x5F3A;&#x4EBA;&#x7C7B;&#x4E0E;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x534F;&#x4F5C;&#xFF1A;</p>
+<ul>
+<li><strong>&#x589E;&#x52A0;&#x4FE1;&#x606F;&#x68C0;&#x7D22;</strong>&#xFF1A;RAG &#x7684;&#x68C0;&#x7D22;&#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x4ECE;&#x5927;&#x6570;&#x636E;&#x96C6;&#x6216;&#x6587;&#x6863;&#x8BED;&#x6599;&#x5E93;&#x4E2D;&#x8BBF;&#x95EE;&#x548C;&#x68C0;&#x7D22;&#x76F8;&#x5173;&#x6750;&#x6599;&#x3002;&#x4ECE;&#x800C;&#x4E3A;&#x6D88;&#x8D39;&#x8005;&#x7684;&#x8BE2;&#x95EE;&#x63D0;&#x4F9B;&#x5168;&#x9762;&#x3001;&#x51C6;&#x786E;&#x7684;&#x7B54;&#x590D;&#x3002;</li>
+<li><strong>&#x63D0;&#x9AD8;&#x5BF9;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x7406;&#x89E3;</strong>&#xFF1A;&#x901A;&#x8FC7;&#x5728;&#x8BA8;&#x8BBA;&#x671F;&#x95F4;&#x4FDD;&#x6301;&#x4E0A;&#x4E0B;&#x6587;&#x4E00;&#x81F4;&#xFF0C;RAG &#x53EF;&#x4EE5;&#x4EA7;&#x751F;&#x66F4;&#x6709;&#x610F;&#x4E49;&#x3001;&#x66F4;&#x5F15;&#x5165;&#x6CE8;&#x76EE;&#x7684;&#x56DE;&#x590D;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4EBA;&#x7C7B;&#x4E0E;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x4E4B;&#x95F4;&#x7684;&#x4EA4;&#x4E92;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x65E0;&#x7F1D;&#x548C;&#x6709;&#x610F;&#x4E49;&#x3002;</li>
+<li><strong>&#x5B9A;&#x5236;&#x54CD;&#x5E94;</strong>&#xFF1A;RAG &#x53EF;&#x80FD;&#x4F1A;&#x8003;&#x8651;&#x7528;&#x6237;&#x7684;&#x9009;&#x62E9;&#x548C;&#x8FC7;&#x53BB;&#x7684;&#x4E92;&#x52A8;&#xFF0C;&#x4EE5;&#x63D0;&#x4F9B;&#x6EE1;&#x8DB3;&#x6BCF;&#x4E2A;&#x4EBA;&#x7684;&#x8981;&#x6C42;&#x548C;&#x504F;&#x597D;&#x7684;&#x5B9A;&#x5236;&#x7B54;&#x6848;&#x3002;</li>
+</ul>
+<p>&#x603B;&#x4F53;&#x800C;&#x8A00;&#xFF0C;RAG &#x5229;&#x7528;&#x5916;&#x90E8;&#x77E5;&#x8BC6;&#x6E90;&#x5E76;&#x751F;&#x6210;&#x4E0A;&#x4E0B;&#x6587;&#x76F8;&#x5173;&#x54CD;&#x5E94;&#x7684;&#x80FD;&#x529B;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x4EBA;&#x7C7B;&#x4E0E;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x4EA4;&#x4E92;&#x7684;&#x8D28;&#x91CF;&#xFF0C;&#x4F7F;&#x534F;&#x4F5C;&#x66F4;&#x52A0;&#x6709;&#x6548;&#x548C;&#x6709;&#x5438;&#x5F15;&#x529B;&#x3002;</p>
+<h3 id="can-you-explain-the-technical-architecture-of-a-rag-system"><a name="can-you-explain-the-technical-architecture-of-a-rag-system" class="anchor-navigation-ex-anchor" href="#can-you-explain-the-technical-architecture-of-a-rag-system"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.3. Can you explain the technical architecture of a RAG system?</h3>
+<p>RAG &#x7CFB;&#x7EDF;&#x7684;&#x6280;&#x672F;&#x67B6;&#x6784;&#x901A;&#x5E38;&#x7531;&#x4E24;&#x4E2A;&#x4E3B;&#x8981;&#x7EC4;&#x4EF6;&#x7EC4;&#x6210;&#xFF1A;</p>
+<ul>
+<li><strong>&#x68C0;&#x7D22;&#x5668;&#x7EC4;&#x4EF6;</strong>&#xFF1A;&#x8BE5;&#x7EC4;&#x4EF6;&#x8D1F;&#x8D23;&#x641C;&#x7D22;&#x6570;&#x636E;&#x96C6;&#x6216;&#x6587;&#x6863;&#x8BED;&#x6599;&#x5E93;&#xFF0C;&#x4EE5;&#x6839;&#x636E;&#x8F93;&#x5165;&#x67E5;&#x8BE2;&#x68C0;&#x7D22;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;&#x5B83;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;&#x5339;&#x914D;&#x3001;&#x8BED;&#x4E49;&#x641C;&#x7D22;&#x6216;&#x795E;&#x7ECF;&#x68C0;&#x7D22;&#x5668;&#x7B49;&#x68C0;&#x7D22;&#x6280;&#x672F;&#x6765;&#x8BC6;&#x522B;&#x548C;&#x63D0;&#x53D6;&#x76F8;&#x5173;&#x6570;&#x636E;&#x3002;</li>
+<li><strong>&#x751F;&#x6210;&#x6A21;&#x578B;</strong>&#xFF1A;&#x83B7;&#x5F97;&#x6570;&#x636E;&#x540E;&#xFF0C;&#x5C06;&#x5176;&#x53D1;&#x9001;&#x5230;&#x751F;&#x6210;&#x6A21;&#x578B;&#xFF0C;&#x8BE5;&#x6A21;&#x578B;&#x4F7F;&#x7528;&#x4FE1;&#x606F;&#x6765;&#x5904;&#x7406;&#x6570;&#x636E;&#x5E76;&#x505A;&#x51FA;&#x54CD;&#x5E94;&#x3002;&#x6839;&#x636E;&#x6536;&#x96C6;&#x5230;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x8BE5;&#x6A21;&#x578B;&#x88AB;&#x6559;&#x5BFC;&#x7406;&#x89E3;&#x5E76;&#x751F;&#x6210;&#x7C7B;&#x4F3C;&#x4E8E;&#x4EBA;&#x7684;&#x6587;&#x5B57;&#x3002;</li>
+</ul>
+<h3 id="how-does-rag-maintain-context-in-a-conversation"><a name="how-does-rag-maintain-context-in-a-conversation" class="anchor-navigation-ex-anchor" href="#how-does-rag-maintain-context-in-a-conversation"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.4. How does RAG maintain context in a conversation?</h3>
+<p>RAG &#x5229;&#x7528;&#x4ECE;&#x8FC7;&#x53BB;&#x6216;&#x5F53;&#x524D;&#x8BA8;&#x8BBA;&#x4E2D;&#x83B7;&#x53D6;&#x7684;&#x4FE1;&#x606F;&#x6765;&#x4FDD;&#x7559;&#x5BF9;&#x8BDD;&#x4E2D;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x3002;
+&#x901A;&#x8FC7;&#x4E0D;&#x65AD;&#x641C;&#x7D22;&#x548C;&#x68C0;&#x7D22;&#x4E0E;&#x73B0;&#x6709;&#x5BF9;&#x8BDD;&#x76F8;&#x5173;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x201C;&#x68C0;&#x7D22;&#x5668;&#x201D;&#x7EC4;&#x4EF6;&#x53EF;&#x786E;&#x4FDD;&#x751F;&#x6210;&#x6A21;&#x578B;&#x83B7;&#x5F97;&#x6240;&#x9700;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x4ECE;&#x800C;&#x751F;&#x6210;&#x8FDE;&#x8D2F;&#x4E14;&#x4E0E;&#x4E0A;&#x4E0B;&#x6587;&#x76F8;&#x7B26;&#x7684;&#x56DE;&#x590D;&#x3002;
+&#x5F97;&#x76CA;&#x4E8E;&#x8FD9;&#x79CD;&#x8FED;&#x4EE3;&#x8FC7;&#x7A0B;&#xFF0C;RAG &#x80FD;&#x591F;&#x7406;&#x89E3;&#x5E76;&#x9002;&#x5E94;&#x4E0D;&#x65AD;&#x53D8;&#x5316;&#x7684;&#x8BA8;&#x8BBA;&#x80CC;&#x666F;&#xFF0C;&#x4ECE;&#x800C;&#x4EA7;&#x751F;&#x66F4;&#x6709;&#x673A;&#x3001;&#x66F4;&#x7CBE;&#x5F69;&#x7684;&#x4E92;&#x52A8;&#x3002;</p>
+<h3 id="what-are-the-limitations-of-rag"><a name="what-are-the-limitations-of-rag" class="anchor-navigation-ex-anchor" href="#what-are-the-limitations-of-rag"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.5. What are the limitations of RAG?</h3>
+<p>RAG &#x7684;&#x4E00;&#x4E9B;&#x9650;&#x5236;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li><strong>&#x8BA1;&#x7B97;&#x590D;&#x6742;&#x6027;</strong>&#xFF1A;&#x6D89;&#x53CA;&#x68C0;&#x7D22;&#x548C;&#x751F;&#x6210;&#x4E24;&#x6B65;&#x8FC7;&#x7A0B;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5927;&#x91CF;&#x8BA1;&#x7B97;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x8FD9;&#x4F1A;&#x5BFC;&#x81F4;&#x63A8;&#x7406;&#x65F6;&#x95F4;&#x548C;&#x8D44;&#x6E90;&#x9700;&#x6C42;&#x589E;&#x52A0;&#x3002;</li>
+<li><strong>&#x5BF9;&#x6570;&#x636E;&#x8D28;&#x91CF;&#x7684;&#x4F9D;&#x8D56;</strong>&#xFF1A;RAG &#x7684;&#x6027;&#x80FD;&#x5728;&#x5F88;&#x5927;&#x7A0B;&#x5EA6;&#x4E0A;&#x4F9D;&#x8D56;&#x4E8E;&#x68C0;&#x7D22;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x7684;&#x8D28;&#x91CF;&#x548C;&#x76F8;&#x5173;&#x6027;&#x3002;&#x5982;&#x679C;&#x68C0;&#x7D22;&#x5668;&#x7EC4;&#x4EF6;&#x65E0;&#x6CD5;&#x68C0;&#x7D22;&#x51C6;&#x786E;&#x6216;&#x76F8;&#x5173;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x5F71;&#x54CD;&#x751F;&#x6210;&#x7684;&#x54CD;&#x5E94;&#x7684;&#x6574;&#x4F53;&#x51C6;&#x786E;&#x6027;&#x548C;&#x53EF;&#x9760;&#x6027;&#x3002;</li>
+<li><strong>&#x53EF;&#x6269;&#x5C55;&#x6027;</strong>&#xFF1A;&#x7BA1;&#x7406;&#x548C;&#x66F4;&#x65B0;&#x5927;&#x578B;&#x6587;&#x6863;&#x8BED;&#x6599;&#x5E93;&#x6216;&#x6570;&#x636E;&#x96C6;&#x53EF;&#x80FD;&#x4F1A;&#x7ED9;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x548C;&#x7EF4;&#x62A4;&#x5E26;&#x6765;&#x6311;&#x6218;&#x3002;&#x5BF9;&#x4E8E;&#x5B9E;&#x65F6;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6216;&#x5177;&#x6709;&#x52A8;&#x6001;&#x5185;&#x5BB9;&#x7684;&#x7CFB;&#x7EDF;&#x5C24;&#x5176;&#x5982;&#x6B64;&#x3002;</li>
+<li><strong>&#x504F;&#x5DEE;&#x548C;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</strong>&#xFF1A;&#x4E0E;&#x5176;&#x4ED6; AI &#x6A21;&#x578B;&#x4E00;&#x6837;&#xFF0C;RAG &#x53EF;&#x80FD;&#x4F1A;&#x65E0;&#x610F;&#x4E2D;&#x4F20;&#x64AD;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x4E2D;&#x5B58;&#x5728;&#x7684;&#x504F;&#x5DEE;&#xFF0C;&#x6216;&#x8005;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x9002;&#x5F53;&#x63A7;&#x5236;&#x6216;&#x9A8C;&#x8BC1;&#xFF0C;&#x4F1A;&#x68C0;&#x7D22;&#x5E76;&#x751F;&#x6210;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x3002;</li>
+</ul>
+<p>&#x5C3D;&#x7BA1;&#x5B58;&#x5728;&#x8FD9;&#x4E9B;&#x9650;&#x5236;&#xFF0C;RAG &#x6B63;&#x5728;&#x8FDB;&#x884C;&#x7684;&#x7814;&#x7A76;&#x548C;&#x8FDB;&#x6B65;&#x65E8;&#x5728;&#x89E3;&#x51B3;&#x8FD9;&#x4E9B;&#x6311;&#x6218;&#xFF0C;&#x5E76;&#x8FDB;&#x4E00;&#x6B65;&#x63D0;&#x9AD8;&#x5176;&#x5728;&#x5404;&#x79CD;&#x81EA;&#x7136;&#x8BED;&#x8A00;&#x5904;&#x7406;&#x4EFB;&#x52A1;&#x4E2D;&#x7684;&#x6027;&#x80FD;&#x548C;&#x9002;&#x7528;&#x6027;&#x3002;</p>
+<h3 id="how-does-rag-handle-complex-queries-that-require-multi-hop-reasoning"><a name="how-does-rag-handle-complex-queries-that-require-multi-hop-reasoning" class="anchor-navigation-ex-anchor" href="#how-does-rag-handle-complex-queries-that-require-multi-hop-reasoning"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.6. How does RAG handle complex queries that require multi-hop reasoning?</h3>
+<p>&#x901A;&#x8FC7;&#x5229;&#x7528;&#x5176;&#x68C0;&#x7D22;&#x7EC4;&#x4EF6;&#x5BF9;&#x591A;&#x4E2A;&#x6587;&#x6863;&#x6216;&#x6570;&#x636E;&#x70B9;&#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#x641C;&#x7D22;&#xFF0C;&#x9010;&#x6B65;&#x83B7;&#x53D6;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;RAG &#x53EF;&#x4EE5;&#x5904;&#x7406;&#x9700;&#x8981;&#x591A;&#x8DF3;&#x63A8;&#x7406;&#x7684;&#x96BE;&#x9898;&#x3002;
+&#x68C0;&#x7D22;&#x7EC4;&#x4EF6;&#x53EF;&#x901A;&#x8FC7;&#x4ECE;&#x4E00;&#x4E2A;&#x6765;&#x6E90;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x6765;&#x9075;&#x5FAA;&#x903B;&#x8F91;&#x903B;&#x8F91;&#x3002;
+&#x6B64;&#x5916;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x4ECE;&#x5176;&#x4ED6;&#x6765;&#x6E90;&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x76F8;&#x5173;&#x6570;&#x636E;&#x3002;
+&#x5728;&#x8FD9;&#x79CD;&#x8FED;&#x4EE3;&#x8FC7;&#x7A0B;&#x7684;&#x5E2E;&#x52A9;&#x4E0B;&#xFF0C;RAG &#x9664;&#x4E86;&#x80FD;&#x4ECE;&#x591A;&#x4E2A;&#x6765;&#x6E90;&#x62FC;&#x51D1;&#x96F6;&#x6563;&#x7684;&#x4FE1;&#x606F;&#x5916;&#xFF0C;&#x8FD8;&#x80FD;&#x4E3A;&#x6D89;&#x53CA;&#x591A;&#x8DF3;&#x63A8;&#x7406;&#x7684;&#x590D;&#x6742;&#x95EE;&#x9898;&#x63D0;&#x4F9B;&#x8BE6;&#x5C3D;&#x7684;&#x7B54;&#x6848;&#x3002;</p>
+<h3 id="can-you-discuss-the-role-of-knowledge-graphs-in-rag"><a name="can-you-discuss-the-role-of-knowledge-graphs-in-rag" class="anchor-navigation-ex-anchor" href="#can-you-discuss-the-role-of-knowledge-graphs-in-rag"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.7. Can you discuss the role of knowledge graphs in RAG?</h3>
+<p>&#x77E5;&#x8BC6;&#x56FE;&#x901A;&#x8FC7;&#x63D0;&#x4F9B;&#x6709;&#x7EC4;&#x7EC7;&#x7684;&#x77E5;&#x8BC6;&#x8868;&#x793A;&#x548C;&#x4E8B;&#x7269;&#x4E4B;&#x95F4;&#x7684;&#x8054;&#x7CFB;&#x6765;&#x4FC3;&#x8FDB;&#x66F4;&#x51C6;&#x786E;&#x3001;&#x66F4;&#x6709;&#x6548;&#x7684;&#x4FE1;&#x606F;&#x68C0;&#x7D22;&#x548C;&#x63A8;&#x7406;&#x3002;
+&#x77E5;&#x8BC6;&#x56FE;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x5728; RAG &#x7684;&#x68C0;&#x7D22;&#x5668;&#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x56FE;&#x7ED3;&#x6784;&#x66F4;&#x6709;&#x6548;&#x5730;&#x904D;&#x5386;&#x548C;&#x68C0;&#x7D22;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x6765;&#x63D0;&#x9AD8;&#x641C;&#x7D22;&#x80FD;&#x529B;&#x3002;
+&#x4F7F;&#x7528;&#x77E5;&#x8BC6;&#x56FE;&#xFF0C;RAG &#x53EF;&#x4EE5;&#x8BB0;&#x5F55;&#x548C;&#x4F7F;&#x7528;&#x60F3;&#x6CD5;&#x548C;&#x4E8B;&#x7269;&#x4E4B;&#x95F4;&#x7684;&#x8BED;&#x4E49;&#x94FE;&#x63A5;&#x3002;
+&#x4ECE;&#x800C;&#x4E3A;&#x7528;&#x6237;&#x7684;&#x8BE2;&#x95EE;&#x63D0;&#x4F9B;&#x66F4;&#x4E30;&#x5BCC;&#x3001;&#x66F4;&#x7EC6;&#x81F4;&#x7684;&#x7B54;&#x6848;&#x3002;</p>
+<h3 id="what-are-the-ethical-considerations-when-implementing-rag-systems"><a name="what-are-the-ethical-considerations-when-implementing-rag-systems" class="anchor-navigation-ex-anchor" href="#what-are-the-ethical-considerations-when-implementing-rag-systems"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.8. What are the ethical considerations when implementing RAG systems?</h3>
+<p>&#x5B9E;&#x65BD; RAG &#x7CFB;&#x7EDF;&#x4F1A;&#x5F15;&#x8D77;&#x4E00;&#x4E9B;&#x9053;&#x5FB7;&#x8003;&#x8651;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li><strong>&#x504F;&#x89C1;&#x4E0E;&#x516C;&#x5E73;</strong>: &#x786E;&#x4FDD; RAG &#x7CFB;&#x7EDF;&#x4E0D;&#x4F1A;&#x5EF6;&#x7EED;&#x6216;&#x653E;&#x5927;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x6216;&#x68C0;&#x7D22;&#x4FE1;&#x606F;&#x4E2D;&#x7684;&#x504F;&#x5DEE;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x3002;&#x5B9E;&#x65BD;&#x68C0;&#x6D4B;&#x548C;&#x51CF;&#x5C11;&#x504F;&#x89C1;&#x7684;&#x63AA;&#x65BD;&#x53EF;&#x4EE5;&#x4FC3;&#x8FDB;&#x751F;&#x6210;&#x7684;&#x54CD;&#x5E94;&#x7684;&#x516C;&#x5E73;&#x6027;&#x548C;&#x516C;&#x6B63;&#x6027;&#x3002;</li>
+<li><strong>&#x95EE;&#x8D23;&#x5236;&#x548C;&#x900F;&#x660E;&#x5EA6;</strong>&#xFF1A;&#x9F13;&#x52B1;&#x7528;&#x6237;&#x4E86;&#x89E3; RAG &#x7CFB;&#x7EDF;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x5E76;&#x4F7F;&#x5176;&#x6613;&#x4E8E;&#x7406;&#x89E3;&#xFF0C;&#x6709;&#x52A9;&#x4E8E;&#x57F9;&#x517B;&#x4ED6;&#x4EEC;&#x4E4B;&#x95F4;&#x7684;&#x8D23;&#x4EFB;&#x611F;&#x548C;&#x4FE1;&#x4EFB;&#x611F;&#x3002;&#x901A;&#x8FC7;&#x63D0;&#x4F9B;&#x68C0;&#x7D22;&#x548C;&#x751F;&#x6210;&#x8FC7;&#x7A0B;&#x7684;&#x6E05;&#x6670;&#x6587;&#x6863;&#x548C;&#x89E3;&#x91CA;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x548C;&#x8BC4;&#x4F30;&#x7CFB;&#x7EDF;&#x505A;&#x51FA;&#x7684;&#x51B3;&#x7B56;&#x3002;</li>
+<li><strong>&#x9690;&#x79C1;&#x548C;&#x6570;&#x636E;&#x5B89;&#x5168;</strong>&#xFF1A;&#x4ECE;&#x5916;&#x90E8;&#x6765;&#x6E90;&#x8BBF;&#x95EE;&#x548C;&#x68C0;&#x7D22;&#x4FE1;&#x606F;&#x65F6;&#xFF0C;&#x4FDD;&#x62A4;&#x7528;&#x6237;&#x9690;&#x79C1;&#x5E76;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x5B89;&#x5168;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x3002;&#x5F3A;&#x6709;&#x529B;&#x7684;&#x6570;&#x636E;&#x4FDD;&#x62A4;&#x63AA;&#x65BD;&#x5E76;&#x9075;&#x5B88;&#x9690;&#x79C1;&#x6CD5;&#x5F8B;&#x548C;&#x6807;&#x51C6;&#x53EF;&#x4EE5;&#x4FDD;&#x62A4;&#x7528;&#x6237;&#x6570;&#x636E;&#x5E76;&#x7EF4;&#x6301;&#x4FE1;&#x4EFB;&#x3002;</li>
+<li><strong>&#x51C6;&#x786E;&#x6027;&#x548C;&#x53EF;&#x9760;&#x6027;</strong>&#xFF1A;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x9519;&#x8BEF;&#x6216;&#x8BEF;&#x5BFC;&#x6027;&#x4FE1;&#x606F;&#x7684;&#x4F20;&#x64AD;&#xFF0C;&#x4FDD;&#x8BC1;&#x6240;&#x83B7;&#x53D6;&#x7684;&#x6570;&#x636E;&#x548C;&#x521B;&#x5EFA;&#x7684;&#x56DE;&#x590D;&#x7684;&#x6B63;&#x786E;&#x6027;&#x548C;&#x53EF;&#x9760;&#x6027;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x3002;&#x6267;&#x884C;&#x8D28;&#x91CF;&#x4FDD;&#x8BC1;&#x7A0B;&#x5E8F;&#x548C;&#x9A8C;&#x8BC1;&#x6D41;&#x7A0B;&#x6709;&#x52A9;&#x4E8E;&#x4FDD;&#x6301; RAG &#x7CFB;&#x7EDF;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x3002;</li>
+<li><strong>&#x7528;&#x6237;&#x540C;&#x610F;&#x548C;&#x63A7;&#x5236;</strong>&#xFF1A;&#x5C0A;&#x91CD;&#x7528;&#x6237;&#x504F;&#x597D;&#x5E76;&#x4E3A;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x63A7;&#x5236;&#x4FE1;&#x606F;&#x8BBF;&#x95EE;&#x548C;&#x4E2A;&#x6027;&#x5316;&#x7A0B;&#x5EA6;&#x7684;&#x9009;&#x9879;&#xFF0C;&#x6709;&#x52A9;&#x4E8E;&#x589E;&#x5F3A;&#x7528;&#x6237;&#x4E0E; RAG &#x7CFB;&#x7EDF;&#x4EA4;&#x4E92;&#x7684;&#x81EA;&#x4E3B;&#x6743;&#x548C;&#x540C;&#x610F;&#x3002;</li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x7248;&#x6743;&#x4FE1;&#x606F; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;: 
+2024-12-19 13:31:42
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="rag_intro_luxiangdong.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 大模型主流应用RAG的介绍——从架构到技术细节">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Top 20+ RAG Interview Questions","level":"1.6.2.2.2","depth":4,"next":{"title":"代码生成与分析","level":"1.6.3","depth":2,"ref":"","articles":[{"title":"编程助手","level":"1.6.3.1","depth":3,"ref":"","articles":[]},{"title":"自动代码补全","level":"1.6.3.2","depth":3,"ref":"","articles":[]}]},"previous":{"title":"大模型主流应用RAG的介绍——从架构到技术细节","level":"1.6.2.2.1","depth":4,"path":"Chap5-App/rag_intro_luxiangdong.md","ref":"Chap5-App/rag_intro_luxiangdong.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","back-to-top-button","expandable-chapters","chapter-fold","splitter","code","github","tbfed-pagefooter","pageview-count","copy-code-button","anchor-navigation-ex","katex-pp"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy 版权信息","modify_label":"该文件修订时间: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/KKenny0/LLMpedia"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"back-to-top-button":{},"pageview-count":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"katex-pp":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","keywords":"AI,LLM,笔记","author":"Kenny Wu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LLMpedia","introduction":{"path":"README.md","title":"LLMpedia"},"gitbook":"*","description":"搜集和分享个人喜欢的大语言模型（LLM）相关资源的在线百科全书。"},"file":{"path":"Chap5-App/rag_interview-ques_analytics.md","mtime":"2024-12-19T05:31:42.031Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-19T05:33:11.885Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
