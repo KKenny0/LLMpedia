@@ -22,6 +22,7 @@
     * [张量并行](Chap2-Training_Evaluation/distributed-training/pipeline-parallel.md)
     * [MoE 并行](Chap2-Training_Evaluation/distributed-training/moe-parallel.md)
   * [微调](Chap2-Training_Evaluation/fine-tuning/overview.md)
+    * [LLM 训练-ybq](Chap2-Training_Evaluation/fine-tuning/llm-training-ybq.md)  
     * [关于微调的讨论](Chap2-Training_Evaluation/fine-tuning/finetuning-discussion.md)
     * [预训练](Chap2-Training_Evaluation/fine-tuning/pretrain.md)
     * [Prompt-Tuning](Chap2-Training_Evaluation/fine-tuning/prompt-tuning.md)
@@ -61,6 +62,8 @@
   * 问答与对话技术
     * Chatbot 技术
     * 问答系统与检索增强生成
+      * [大模型主流应用RAG的介绍——从架构到技术细节](Chap5-App/rag_intro_luxiangdong.md)
+      * [Top 20+ RAG Interview Questions](Chap5-App/rag_interview-ques_analytics.md)
   * 代码生成与分析
     * 编程助手
     * 自动代码补全
